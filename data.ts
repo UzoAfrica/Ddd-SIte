@@ -3,12 +3,19 @@ import Superior_Curriculum from "./assets/img1.svg";
 import Mentorship from "./assets/img2.svg";
 import Quality_Content from "./assets/img3.svg";
 import Flex_Payment from "./assets/img4.svg";
-import Success from "./assets/img5.svg";import SuperiorCurriculum from './assets/sc-icon.svg'
+import Success from "./assets/img5.svg";
+import SuperiorCurriculum from './assets/sc-icon.svg'
 import MentorshipIcon from './assets/mc-icons.svg'
 import TrackIcon from './assets/tr-icon.svg'
 import SpecOne from './assets/spec1.svg';
 import SpecTwo from './assets/spec2.svg';
 import SpecThree from './assets/spec3.svg';
+import Mary from "./assets/mary.jpeg";
+import Eze from "./assets/eze.png";
+import Wisdom from "./assets/wisdom.jpeg";
+import Tega from "./assets/tega.jpeg";
+import Bolu from "./assets/bolu.jpeg";
+import Rami from "./assets/rami.png"
 
 
 export const COURSES = [
@@ -112,3 +119,109 @@ export const PROGRAMS = [
         content: "Commit 8 – 10 hours daily to the program."
     }
 ]
+
+
+export const NyCourses = [
+    {
+      id: 1,
+      title: "MSc in Computer Science and Information Systems",
+    },
+    {
+      id: 2,
+      title: "MSc in Data Science",
+    },
+  ];
+
+
+  export const NyData = [
+    "The University of North Carolina, Wilmington where academic excellence meets accessibility. UNCW is dedicated to providing a transformative educational experience for individuals like your child who are seeking to further their career through a masters degree.",
+    "Located in the vibrant coastal city of Wilmington, North Carolina, UNCW offers students the unique opportunity to pursue higher education in a picturesque beach town setting.",
+    "With a focus on innovation and inclusivity, the graduate program at UNCW offers flexible options tailored to accommodate your very busy schedule and personal commitments.    ",
+    " The area's pristine beaches and favorable weather conditions make it a popular destination for water sports enthusiasts, offering a perfect balance between academic pursuits and leisure activities.    ",
+    "Some major nearby cities include; Raleigh, Durham, Greensboro, and Charlotte.",
+  ];
+
+  export const IndianaData = [
+    "Indiana Institute of Technology is a renowned private college of technology focused on providing world-class education to individuals in the tech sector.Located in Fort Wayne, IIT offers students a welcoming and diverse community in the heart of the Midwest.",
+    "The college of professional studies is dedicated to empowering busy, working-class adults like yourself to pursue your master's degree in tech while balancing professional and personal life.",
+    "With flexible programs to meet your needs and commitment to real world applications, Indiana Tech prepares you to excel in tech and advance your career.",
+    " Overall, Indiana Tech provides a supportive and enriching educational environment where students can pursue their academic and professional goals while enjoying the benefits of a close-knit community and access to major metropolitan areas.",
+    "Some Nearby major cities include Chicago, Indianapolis, Columbus and Detroit.",
+  ];
+
+
+  export const IndianaCourses = [
+    {
+      id: 1,
+      title: "MS in Engineering Management",
+    },
+    {
+      id: 2,
+      title: "STEM MBA in Business Analytics",
+    },
+    {
+      id: 3,
+      title: "MS in Cybersecurity",
+    },
+    {
+      id: 4,
+      title: "MS in Information Systems",
+    },
+  ]
+
+  export const DecadevsProfile = [
+    { 
+      id: 1,
+      img: Mary,
+      name: "Mary Etokwudo",
+      title: "Machine Learning Engineer",
+      company: "Dermie.AI",
+      location: "London, United Kingdom",
+      description: `"Coming to Decagon has helped me build a career in Software Engineering. It's been over 3 years and I can confidently say I made the right decision"`,
+    },
+    { 
+      id: 2,
+      img: Eze,
+      name: "Odira Eze ",
+      title: "Backend Software Engineer",
+      company: "Payoneer",
+      location: "Munich, Germany",
+      description: "“I have learned so much and Decagon has contributed to making my tech journey a successful one”",
+    },
+    { 
+      id: 3,
+      img: Wisdom,
+      name: "Wisdom Ngwueche",
+      title: "Backend Developer ",
+      company: "Sterling Bank ",
+      location: "Lagos, Nigeria",
+      description: "“Decagon provided access to experienced software tutors and mentors, and I am currently benefiting from Decagon's extensive community of developers”",
+    },
+    { 
+      id: 4,
+      img: Tega,
+      name: "Tega Oke ",
+      title: "Software Engineer ",
+      company: "Grey (YC W22)",
+      location: "Lagos, Nigeria",
+      description: "“Passing through the Decagon program was a wonderful experience. I learned basic and advanced programming knowledge and agile skills that sharpened my soft skills set, making me the skilled full-stack software engineer that I am today”",
+    },
+    { 
+      id: 5,
+      img: Bolu,
+      name: "Boluwatife Adeshina  ",
+      title: " Cloud Architect ",
+      company: " Seneca Polytechnic ",
+      location: " Toronto, Canada ",
+      description: "“Decagon’s software engineering bootcamp transformed my skills in IOS development. The structured curriculum, supportive community, and lasting relationships shaped my career significantly”",
+    },
+    { 
+      id: 6,
+      img: Rami,
+      name: "Rami Oni ",
+      title: "Product Owner",
+      company: "Vertex Software Corporation ",
+      location: "Austin, Texas ",
+      description: "“ The Decagon experience has been very helpful in my tech journey. I had liked-minded people to learn with, instructors and people to help me stay motivated”",
+    }
+  ]

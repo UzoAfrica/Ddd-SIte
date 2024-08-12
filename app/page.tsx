@@ -1,4 +1,4 @@
-import DoubleG from "@/components/DoubleG";
+import DoubleG from "@/components/common/DoubleG";
 import Product from "@/components/Product";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import NavBar from "@/components/common/NavBar";
