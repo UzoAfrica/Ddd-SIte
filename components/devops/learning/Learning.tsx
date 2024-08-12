@@ -1,6 +1,7 @@
 import React from "react";
 import PartOne from "../../../assets/l1.svg";
 import PartTwo from "../../../assets/l2.svg";
+import PartThree from "../../../assets/course-icon.svg";
 import Image from "next/image";
 import DecagonLogo from "../../../assets/decagonLogo.svg";
 import ProgramImg from "../../../assets/program-img.svg";
@@ -8,21 +9,27 @@ import Faq from "./faq";
 import ProgramPart from "@/components/ProgramPart";
 
 const firstCourse = [
-  "Introduction to Data Analysis",
-  "Excel Fundamentals & Intermediate Skills & Techniques",
-  "Power BI Fundamentals & Data Analysis",
-  "Python Fundamentals",
-  "Python Libraries for Data Analysis",
-  "Data Manipulation with Pandas",
-  "Data Visualization with Python",
+  "Introduction to DevOps and Basic Linux",
+  "Version Control with Git and GitHub",
+  "Introduction to Cloud Computing and AWS",
+  "Basic Networking and CI/CD Introduction",
 ];
 
 const secondCourse = [
-  "Introduction to SQL",
-  "Intermediate SQL Queries",
-  "Advanced SQL Queries",
-  "Integrating Python & SQL",
+  "Infrastructure as Code (IaC)",
+  "Configuration Management ",
+  "Monitoring and Logging",
+  "Containerization with Docker",
+];
+
+
+const thirdCourse = [
+  "Orchestration with Kubernetes",
+  "Advanced AWS Services",
+  "Security in DevOps",
   "Final Project",
+  "Certificate of Completion ",
+  "Complimentary Application Guidance for a Tech Masters abroad",
 ];
 
 function Learning() {
@@ -32,18 +39,24 @@ function Learning() {
         <h1 className="text-center mb-[53px] text-2xl md:text-[46px] font-[700]">
           What you will learn?
         </h1>
-        <div className="grid md:grid-cols-2 gap-10">
+        <div className="grid md:grid-cols-3 gap-10">
           <ProgramPart
             img={PartOne}
             firstCourse={firstCourse}
             title="Program Part 1"
-            subtitle="(first 5 weeks)"
+            subtitle="(first 4 weeks)"
           />
           <ProgramPart
             img={PartTwo}
             firstCourse={secondCourse}
             title="Program Part 2"
-            subtitle="(second 5 weeks)"
+            subtitle="(second 4 weeks)"
+          />
+          <ProgramPart
+            img={PartThree}
+            firstCourse={thirdCourse}
+            title="Program Part 2"
+            subtitle="(second 4 weeks)"
           />
         </div>
         <div className="grid lg:grid-cols-2 gap-10  lg:mt-[100px]">

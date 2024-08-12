@@ -2,6 +2,7 @@ import React from "react";
 import PartOne from "../assets/l1.svg";
 import PartTwo from "../assets/l2.svg";
 import ProgramPart from "./ProgramPart";
+import PartThree from "../assets/course-icon.svg";
 
 
 interface ILearning {
@@ -86,7 +87,7 @@ function Learning({ pageType }: ILearning) {
              subtitle="(second 6 weeks)"
            />
            <ProgramPart
-             img={PartTwo}
+             img={PartThree}
              firstCourse={thirdCourse}
              title="Program Part 3"
              subtitle="(second 6 weeks)"

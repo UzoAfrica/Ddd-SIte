@@ -15,11 +15,13 @@ import Facility from "@/components/common/Facility";
 import Faq from "@/components/common/faq";
 import Footer from "@/components/common/Footer";
 import Requirement from '@/components/Requirement'
+import FrontendHero from '@/components/frontend/FrontendHero'
 
 function Frontend() {
   return (
     <div>
         <NavBar pageType="fullstack" />
+        <FrontendHero/>
         <WhyDecagon />
         <Program />
         <Learning pageType='frontend' />

@@ -45,7 +45,9 @@ function Facility() {
             <div className="mt-4 w-full md:mt-0">
             <Image
               className="w-[100%]"
-              src={FacilityImage4}
+              src= "https://doubleg-cdn.decagon.institute/facility-four.svg"
+              width={500}
+              height={500}
               alt="Facility Space"
             />
             </div>

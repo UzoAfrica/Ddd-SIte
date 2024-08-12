@@ -12,7 +12,7 @@ function ProgramPart({ img, firstCourse, title, subtitle}: any) {
           return (
             <div className="flex items-center gap-2">
               <p className="h-1.5 w-1.5 bg-black rounded-lg"></p>
-              <p>{course}</p>
+              <p className="">{course}</p>
             </div>
           );
         })}
