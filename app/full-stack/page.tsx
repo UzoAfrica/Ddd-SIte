@@ -7,7 +7,7 @@ import Payment from "@/components/Payment";
 import Program from "@/components/Program";
 import Requirement from "@/components/Requirement";
 import NavBar from "@/components/common/NavBar";
-import WhyDecagon from "@/components/fullstack/WhyDecagon";
+import WhyDecagon from "@/components/common/WhyDecagon";
 import GetStarted from "@/components/GetStarted";
 import DoubleG from "@/components/common/DoubleG";
 import IndianaTech from "@/components/common/IndianaTech";
@@ -26,9 +26,9 @@ function FullStack() {
       <FullstackPicture />
       <WhyDecagon />
       <Program />
-      <Learning />
+      <Learning pageType="fullstack"/>
       <Banner />
-      <Payment />
+      <Payment pageType="fullstack"/>
       <Requirement />
       <GetStarted pageType="main" />
       <DoubleG />

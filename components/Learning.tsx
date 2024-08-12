@@ -3,6 +3,11 @@ import PartOne from "../assets/l1.svg";
 import PartTwo from "../assets/l2.svg";
 import ProgramPart from "./ProgramPart";
 
+
+interface ILearning {
+  pageType: "main" | "fullstack" | "frontend";
+}
+
 const firstCourse = [
   "Introduction to Git",
   "Introduction to Basic HTML/CSS",
@@ -38,34 +43,72 @@ const thirdCourse = [
   "Guidance for a Tech Masters abroad"
 ];
  
+const frontendCourse = [
+  "Basic HTML",
+  "Advanced HTML",
+  "Basic CSS ",
+  "Advanced CSS",
+  "Basic JavaScript",
+  "Advanced JavaScript"
+];
 
-function Learning() {
+const frontendAdavnce = [
+  "Introduction to React",
+  "React State Management",
+  "React Router",
+  "Advanced React Concepts",
+  "Final Project",
+  "Certificate of Completion ", 
+  "Complimentary Application Guidance for a Tech Masters abroad"
+];
+
+
+
+function Learning({ pageType }: ILearning) {
   return (
     <div className="">
       <div className="mx-auto container max-w-screen-xl py-5 lg:py-[100px] md:px-8 px-3">
         <h1 className="text-center mb-[53px] text-2xl md:text-[46px] font-[700]">
           What you will <span className="text-[#34A853]">learn</span>
         </h1>
-        <div className="grid md:grid-cols-3 gap-10">
-          <ProgramPart
-            img={PartOne}
-            firstCourse={firstCourse}
-            title="Program Part 1"
-            subtitle="(first 6 weeks)"
-          />
-          <ProgramPart
-            img={PartTwo}
-            firstCourse={secondCourse}
-            title="Program Part 2"
-            subtitle="(second 6 weeks)"
-          />
-          <ProgramPart
-            img={PartTwo}
-            firstCourse={thirdCourse}
-            title="Program Part 3"
-            subtitle="(second 6 weeks)"
-          />
-        </div>
+       {pageType === "fullstack" && (
+           <div className="grid md:grid-cols-3 gap-10">
+           <ProgramPart
+             img={PartOne}
+             firstCourse={firstCourse}
+             title="Program Part 1"
+             subtitle="(first 6 weeks)"
+           />
+           <ProgramPart
+             img={PartTwo}
+             firstCourse={secondCourse}
+             title="Program Part 2"
+             subtitle="(second 6 weeks)"
+           />
+           <ProgramPart
+             img={PartTwo}
+             firstCourse={thirdCourse}
+             title="Program Part 3"
+             subtitle="(second 6 weeks)"
+           />
+         </div>
+       )}
+       {pageType === "frontend" && (
+           <div className="grid md:grid-cols-2 gap-10">
+           <ProgramPart
+             img={PartOne}
+             firstCourse={frontendCourse}
+             title="Program Part 1"
+             subtitle="(first 6 weeks)"
+           />
+           <ProgramPart
+             img={PartTwo}
+             firstCourse={frontendAdavnce}
+             title="Program Part 2"
+             subtitle="(second 6 weeks)"
+           />
+         </div>
+       )}
       </div>
     </div>
   );
