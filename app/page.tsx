@@ -9,6 +9,7 @@ import Facility from "@/components/common/Facility";
 import IndianaTech from "@/components/common/IndianaTech";
 import NorthCarolinaSchool from "@/components/common/NorthCarolinaSchool";
 import Footer from "@/components/common/Footer";
+import Training from "@/components/main/Training";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <InstituteHero />
       <Product/>
       <DoubleG/>
+      <Training />
       <WhyChooseUs/>
       <Team />
       <Decadev />
