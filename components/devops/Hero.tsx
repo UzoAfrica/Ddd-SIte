@@ -36,7 +36,7 @@ function Hero({pageType}:  IHero) {
         <div className="grid grid-cols-1 lg:grid-cols-[55%_40%] justify-between">
         <div>
           {" "}
-          <h1 className="font-[900] text-[26px] leading-[126%] lg:text-[48px] w-[93%] mt-1">
+          <h1 className="font-[900] text-[26px] leading-[126%] lg:text-[48px] w-[93%] mt-6 text-center lg:text-left">
           Chart Your Career in Tech as a <span className="text-[#34A853]">DevOps Engineer</span> in 12 weeks
           </h1>
           <p className="text-center md:text-left text-sm md:text-base  text-[#667085] lg:w-[83%] mt-3">
