@@ -21,13 +21,15 @@ export default function Home() {
       <Training />
       <WhyChooseUs/>
       <Team />
-      <Decadev />
-      <Facility/>
+      <Decadev pageType="main"/>
+      <Facility pageType="main"/>
       <div className="pt-[50px]">
-        <IndianaTech />
+        <IndianaTech  pageType="main"/>
       </div>
       <NorthCarolinaSchool />
+     <div className="mt-10 lg:mt-0">
       <Footer />
+     </div>
    </div>
   );
 }

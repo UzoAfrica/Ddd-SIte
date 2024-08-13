@@ -33,12 +33,12 @@ function FullStack() {
       <GetStarted pageType="main" />
       <DoubleG />
       <div className="pt-[120px]">
-        <IndianaTech />
+        <IndianaTech pageType="fullstack" />
       </div>
       <NorthCarolinaSchool />
       <Team />
-      <Decadev />
-      <Facility/>
+      <Decadev pageType="fullstack"/>
+      <Facility pageType="fullstack"/>
       <Faq/>
       <Footer />
     </div>

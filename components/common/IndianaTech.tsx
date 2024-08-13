@@ -1,11 +1,23 @@
 import Image from "next/image";
 import { FaCheck } from "react-icons/fa6";
 import { IndianaCourses, IndianaData } from "@/data";
+import Heading from "./Heading";
 
-function IndianaTech() {
+interface IPartner {
+    pageType: "main" | "fullstack";
+  }
+
+function IndianaTech({pageType}: IPartner) {
   return (
     <div className="mx-auto max-w-screen-xl container md:px-6 px-3">
-        <h1 className="text-center text-2xl md:text-5xl font-[600]">Our Partner <span className="text-[#34A853]">Schools</span> in America</h1>
+        {pageType === "main" && (
+            <>
+                <Heading title="Our Partner Schools in America" />
+            </>
+        )}
+        {pageType === "fullstack" && (
+           <h1 className="text-center text-2xl md:text-5xl font-[600]">Our Partner <span className="text-[#34A853]">Schools</span> in America</h1>
+        )}
         <div className="flex mt-10 lg:mt-20 md:px-4 flex-col lg:grid grid-cols-[55%_44%] gap-[40px] justify-center">
         <div className="lg:pr-16">
             <h1 className="font-bold text-2xl lg:text-[30px] leading-[140%] lg:pr-3 mb-6 lg:mb-4">

@@ -6,9 +6,9 @@ function Product() {
   return (
     <div className="bg-image mt-[47px] py-[56px]">
       <div className="mx-auto max-w-screen-xl container md:px-6 px-3">
-        <div className="flex gap-[62px] justify-between">
+        <div className="flex-col xl:flex xl:flex-row gap-[62px] justify-between">
           <div className="flex-1">
-            <h1 className="text-[32px] font-[800] text-[#101828] w-[80%] leading-[120%]">
+            <h1 className="text-2xl md:text-[32px] font-[800] text-[#101828]  lg:w-[80%] leading-[120%]">
               We have produced over <span className="text-[#34A853]"> 1000</span> successful software engineers in just 5
               years.
             </h1>
@@ -31,8 +31,8 @@ function Product() {
               career advancement.
             </p>
           </div>
-          <div>
-            <Image src={"https://doubleg-cdn.decagon.institute/poductPic.svg"}  width={500} height={500} alt="" />
+          <div className="">
+            <Image src={"https://doubleg-cdn.decagon.institute/poductPic.svg"} className="w-[100%] mt-10 lg:mt-0 lg:w-full"  width={500} height={500} alt="" />
           </div>
         </div>
       </div>

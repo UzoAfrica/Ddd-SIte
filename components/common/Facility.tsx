@@ -4,10 +4,20 @@ import FacilityImage2 from "../../assets/f2.png";
 import FacilityImage3 from "../../assets/f3.png";
 import FacilityImage4 from "../../assets/f4.png";
 import Image from "next/image";
+import Heading from "./Heading";
 
-function Facility() {
+interface IFacility {
+  pageType: "main" | "fullstack";
+}
+
+function Facility({pageType}: IFacility) {
   return (
     <div className="mx-auto max-w-screen-xl lg:my-[50px] container md:px-6 px-3">
+      {pageType === "main" && (
+         <div className="mt-4 mb-8 lg:mt-[100px]">
+           <Heading title="Our Facility " />
+         </div>
+      )}
       <h1 className="text-center text-2xl lg:text-[40px] font-[700]">
         Explore Our State-of-the-Art Facility
       </h1>
