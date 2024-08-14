@@ -58,7 +58,7 @@ function Decadev({ pageType }: IDecadev) {
       )}
       {pageType === "main" && (
         <>
-          <Heading title="Decadevs" />
+          {/* <Heading title="Decadevs" /> */}
           <h1 className="text-center text-2xl lg:text-[32px] font-bold  mt-[34px] md:w-[75%] mx-auto">
             Meet some of our Decagon Alumni Decadevs
           </h1>

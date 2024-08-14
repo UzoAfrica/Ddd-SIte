@@ -203,9 +203,9 @@ function Training() {
               <h1 className="text-white font-[700] text-2xl">
                 DevOps Engineering
               </h1>
-              <p className="text-white text-sm font-[700]">
-                (Learn both Front-end and Back-end Development)
-              </p>
+              {/* <p className="text-white text-sm font-[700]">
+               
+              </p> */}
             </div>
             <div className="px-6">
               <h1 className="text-center font-[500] mt-5">
@@ -283,7 +283,7 @@ function Training() {
         <div className="grid md:grid-cols-2 gap-6 lg:hidden">
           <div className="border-[1px]  border-[rgba(0, 0, 0, 0.08)] custom-shadow rounded-b-md">
             <div className="bg-fullstack pl-6 pt-[42px] h-[170px] pb-[45px]">
-              <h1 className="text-white font-[700] text-2xl">
+              <h1 className="text-white font-[700] pr-2 text-2xl">
                 Full-Stack Software Engineering
               </h1>
               <p className="text-white text-sm font-[700]">

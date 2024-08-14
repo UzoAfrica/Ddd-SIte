@@ -6,7 +6,7 @@ import Image from 'next/image'
 function WhyChooseUs() {
   return (
     <div className="mx-auto max-w-screen-xl container my-14 md:px-6 px-3">
-        <Heading title="Why you choose us?"/>
+        <Heading title="Why you choose us"/>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-[31px] mt-[32px]">
             {data.map((item) => {
                 return (

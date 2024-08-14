@@ -1,5 +1,4 @@
 import { data } from '@/data'
-import React from 'react'
 
 interface IHeading {
     title: string
@@ -8,16 +7,7 @@ interface IHeading {
 function Heading({title}: IHeading) {
   return (
        <div className='flex justify-center'>
-         <p className='font-[700] text-lg bg-[#34A853] px-6 py-1.5 text-white  rounded-[32px]'>{title}</p>
-         <div className='grid grid-cols-3'>
-            {data.map((item) => {
-                return (
-                    <div key={item.id}>
-                        
-                    </div>
-                )
-            })}
-         </div>
+         <p className='font-[700] text-3xl text-center md:text-[44px] px-6 py-1.5 text-[#1E1E1E]  rounded-[32px]'>{title}</p>
        </div>
   )
 }
