@@ -112,7 +112,7 @@ function Training() {
                 September 2024
               </h1>
               <h1 className=" pt-3 text-lg text-[#757575] ">
-                <span className="font-[700] text-black">Duration:</span> 18
+                <span className="font-[700] text-black">Duration:</span> 12
                 Weeks
               </h1>
               <h1 className=" pt-2 text-lg">
@@ -165,7 +165,7 @@ function Training() {
                 September 2024
               </h1>
               <h1 className=" pt-3 text-lg text-[#757575] ">
-                <span className="font-[700] text-black">Duration:</span> 18
+                <span className="font-[700] text-black">Duration:</span> 10
                 Weeks
               </h1>
               <h1 className=" pt-2 text-lg">
@@ -220,7 +220,7 @@ function Training() {
                 September 2024
               </h1>
               <h1 className=" pt-3 text-lg text-[#757575] ">
-                <span className="font-[700] text-black">Duration:</span> 18
+                <span className="font-[700] text-black">Duration:</span> 12
                 Weeks
               </h1>
               <h1 className=" pt-2 text-lg">
@@ -358,7 +358,7 @@ function Training() {
                 September 2024
               </h1>
               <h1 className=" pt-3 text-lg text-[#757575] ">
-                <span className="font-[700] text-black">Duration:</span> 18
+                <span className="font-[700] text-black">Duration:</span> 12
                 Weeks
               </h1>
               <h1 className=" pt-2 text-lg">
@@ -411,7 +411,7 @@ function Training() {
                 September 2024
               </h1>
               <h1 className=" pt-3 text-lg text-[#757575] ">
-                <span className="font-[700] text-black">Duration:</span> 18
+                <span className="font-[700] text-black">Duration:</span> 10
                 Weeks
               </h1>
               <h1 className=" pt-2 text-lg">
@@ -466,7 +466,7 @@ function Training() {
                 September 2024
               </h1>
               <h1 className=" pt-3 text-lg text-[#757575] ">
-                <span className="font-[700] text-black">Duration:</span> 18
+                <span className="font-[700] text-black">Duration:</span> 12
                 Weeks
               </h1>
               <h1 className=" pt-2 text-lg">
