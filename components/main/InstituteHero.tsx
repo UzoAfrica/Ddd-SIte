@@ -23,7 +23,7 @@ function InstituteHero() {
         accelerating your tech journey, you are in the right place
       </p>
       <div className="flex justify-center mt-8 mb-10">
-        <Button btnLink="/register" text="Enroll in a Program"/>
+        <Button btnLink="/#training" text="Enroll in a Program"/>
       </div>
       <div className="flex justify-center">
         <Image className="hidden md:block" src={"https://doubleg-cdn.decagon.institute/coverPicture.svg"} width={1000} height={1000} alt="" />

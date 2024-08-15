@@ -24,7 +24,7 @@ function Training() {
   }, [emblaApi]);
 
   return (
-    <div className="embla py-[50px] mx-auto max-w-screen-xl md:px-8 mt-8 lg:mt-[100px] px-3">
+    <div id="training" className="embla py-[50px] mx-auto max-w-screen-xl md:px-8 mt-8 lg:mt-[100px] px-3">
       <Heading title="Our Training Programs " />
       <p className="text-center my-3 text-[#5C6881] font-[500]">
         Our programs are highly intensive, designed to accelerate your

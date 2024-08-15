@@ -16,7 +16,7 @@ function Register() {
      <div className="bg-white">
      {!iframeLoaded && (
         <div
-          className="w-8 h-8 bg-center bg-no-repeat bg-cover mx-auto mt-[100px]"
+          className="w-8 h-8 bg-center bg-no-repeat bg-cover mx-auto mt-[80px]"
           style={{ backgroundImage: `url('/images/loader.gif')` }}
         />
       )}
