@@ -20,7 +20,7 @@ import FrontendHero from "@/components/frontend/FrontendHero";
 function Frontend() {
   return (
     <div>
-      <NavBar pageType="fullstack" />
+      <NavBar pageType="frontend" />
       <FrontendHero />
       <WhyDecagon />
       <Program />
@@ -28,7 +28,7 @@ function Frontend() {
       <Banner />
       <Payment pageType="frontend" />
       <Requirement />
-      <GetStarted pageType="main" />
+      <GetStarted pageType="frontend" />
       <DoubleG />
       <div className="pt-[120px]">
         <IndianaTech pageType="fullstack" />
@@ -37,7 +37,7 @@ function Frontend() {
       <Team />
       <Decadev pageType="fullstack" />
       <Facility pageType="fullstack" />
-      <Faq />
+      <Faq pageType="frontend" />
       <Footer />
     </div>
   );

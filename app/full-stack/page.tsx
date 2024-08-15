@@ -39,7 +39,7 @@ function FullStack() {
       <Team />
       <Decadev pageType="fullstack"/>
       <Facility pageType="fullstack"/>
-      <Faq/>
+      <Faq pageType="fullstack"/>
       <Footer />
     </div>
   );

@@ -44,7 +44,7 @@ function Hero({pageType}:  IHero) {
           </p>
           <div className="mt-4 lg:mt-10 flex gap-6 items-center">
             <Image className='-ml-14' src={PointArrow} alt="Point arrow" />
-            <Link href="/register" className="py-3 md:py-4 text-center text-sm md:text-base w-[200px] rounded-lg bg-[#34A853] text-[#fff] font-[600]">Apply Now</Link>
+            <Link href="/reg-devop" className="py-3 md:py-4 text-center text-sm md:text-base w-[200px] rounded-lg bg-[#34A853] text-[#fff] font-[600]">Apply Now</Link>
           </div>
         </div>
         <Image className='mt-[51px] w-full lg:mt-0' src={HeroImage} alt="hero__image" />

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { RiSendPlaneLine } from "react-icons/ri";
 
 interface IGetStarted {
-  pageType: "main" | "parent";
+  pageType: "main" | "parent" | "frontend";
 }
 
 function GetStarted( { pageType }: IGetStarted) {
@@ -20,10 +20,18 @@ function GetStarted( { pageType }: IGetStarted) {
             </div>
             )}
             {pageType === "parent"  && (
-              <div className="flex justify-center items-center mt-8 bg-[#c00] rounded-lg py-3 gap-2 w-[160px] mx-auto">
+              <div className="flex justify-center items-center mt-8 bg-[#34A853] rounded-lg py-3 gap-2 w-[160px] mx-auto">
                   <Link
                        href="/parentRegister"
                       className="text-sm ">Enroll</Link>
+                  <RiSendPlaneLine size={20} />
+            </div>
+            )}
+            {pageType === "frontend"  && (
+              <div className="flex justify-center items-center mt-8 bg-[#34A853] rounded-lg py-3 gap-2 w-[160px] mx-auto">
+                  <Link
+                       href="/reg-frontend"
+                      className="text-sm ">Apply Now</Link>
                   <RiSendPlaneLine size={20} />
             </div>
             )}

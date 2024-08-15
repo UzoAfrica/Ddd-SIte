@@ -31,7 +31,7 @@ function Deveops() {
       <Team />
       <Decadev pageType="fullstack"/>
       <Facility pageType="fullstack"/>
-      <Faq/>
+      <Faq pageType="devops"/>
       <Footer />
     </div>
   );

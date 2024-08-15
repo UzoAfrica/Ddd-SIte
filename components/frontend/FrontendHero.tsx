@@ -26,7 +26,7 @@ function FrontendHero() {
         <div className="flex justify-center mt-4">
         <Link
           className="py-3 text-sm md:text-base md:py-4 px-4 sm:px-12 rounded-lg bg-[#34A853] text-[#fff] font-[600]"
-          href="/register"
+          href="/reg-frontend"
         >
           Apply Now
         </Link>

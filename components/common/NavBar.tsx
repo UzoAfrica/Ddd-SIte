@@ -5,7 +5,7 @@ import Button from "./Button";
 
 
 interface INavbar {
-  pageType: "main" | "fullstack";
+  pageType: "main" | "fullstack" | "frontend";
 }
 
 function NavBar({pageType}: INavbar) {
@@ -15,7 +15,8 @@ function NavBar({pageType}: INavbar) {
         <div className="flex justify-between items-center">
           <Image className="w-[100px] h-[30px] md:h-[38px] md:w-[177px]" src={DecagonLogo} alt="decagon logo" />
          {pageType === "main" && <Button btnLink="/register" text="Enroll in a Program"/>}
-         {pageType === "fullstack" && <Button btnLink="/fullstack" text="Apply Now"/>}
+         {pageType === "fullstack" && <Button btnLink="/register" text="Apply Now"/>}
+         {pageType === "frontend" && <Button btnLink="/reg-frontend" text="Apply Now"/>}
         </div>
       </div>
     </div>
@@ -23,3 +24,4 @@ function NavBar({pageType}: INavbar) {
 }
 
 export default NavBar;
+
