@@ -296,7 +296,7 @@ function Training() {
               <span className="text-[#34A853] text-2xl font-[700]"> ₦550k</span>
             </h1>
             <h1 className=" pt-[42px] text-lg text-[#757575] ">
-              <span className="font-[700] text-black">Enroll date:</span> 10th
+              <span className="font-[700] text-black">Program starts: </span> 10th
               September 2024
             </h1>
             <h1 className=" pt-3 text-lg text-[#757575] ">
@@ -325,7 +325,7 @@ function Training() {
             <div className="flex justify-center">
               <Link
                 href="/full-stack"
-                className="border-[1px] text-[#34A853] text-sm rounded-lg font-medium border-[#34A853] px-4 hover:bg-[#34A853] hover:text-white my-[55px] py-1"
+                className="border-[1px] bg-[#34A853] text-base rounded-lg font-medium border-[#34A853] px-6 text-white my-[55px] py-4"
               >
                 View more & Register
               </Link>
@@ -338,7 +338,7 @@ function Training() {
               Frontend Development
             </h1>
             <p className="text-white text-sm font-[700]">
-              (Learn both Front-end)
+              
             </p>
           </div>
           <div className="px-6">
@@ -347,7 +347,7 @@ function Training() {
               <span className="text-[#34A853] text-2xl font-[700]"> ₦495k</span>
             </h1>
             <h1 className=" pt-[42px] text-lg text-[#757575] ">
-              <span className="font-[700] text-black">Enroll date:</span> 10th
+              <span className="font-[700] text-black">Program starts: </span> 10th
               September 2024
             </h1>
             <h1 className=" pt-3 text-lg text-[#757575] ">
@@ -376,7 +376,7 @@ function Training() {
             <div className="flex justify-center">
               <Link
                 href="/frontend"
-                className="border-[1px] text-[#34A853] text-sm rounded-lg font-medium border-[#34A853] px-4 hover:bg-[#34A853] hover:text-white my-[55px] py-1"
+                className="border-[1px] bg-[#34A853] text-base rounded-lg font-medium border-[#34A853] px-6 text-white my-[55px] py-4"
               >
                 View more & Register
               </Link>
@@ -394,7 +394,7 @@ function Training() {
               <span className="text-[#34A853] text-2xl font-[700]"> ₦395k</span>
             </h1>
             <h1 className=" pt-[42px] text-lg text-[#757575] ">
-              <span className="font-[700] text-black">Enroll date: </span>
+              <span className="font-[700] text-black">Program starts: </span>
               27th August 2024
             </h1>
             <h1 className=" pt-3 text-lg text-[#757575] ">
@@ -423,7 +423,7 @@ function Training() {
             <div className="flex justify-center">
               <a
                 href="https://data-analysis.decagon.institute/"
-                className="border-[1px] text-[#34A853] text-sm rounded-lg font-medium border-[#34A853] px-4 hover:bg-[#34A853] hover:text-white my-[55px] py-1"
+                className="border-[1px] bg-[#34A853] text-base rounded-lg font-medium border-[#34A853] px-6 text-white my-[55px] py-4"
               >
                 View more & Register
               </a>
@@ -443,7 +443,7 @@ function Training() {
               <span className="text-[#34A853] text-2xl font-[700]"> ₦400k</span>
             </h1>
             <h1 className=" pt-[42px] text-lg text-[#757575] ">
-              <span className="font-[700] text-black">Enroll date:</span> 10th
+              <span className="font-[700] text-black">Program starts:</span> 10th
               September 2024
             </h1>
             <h1 className=" pt-3 text-lg text-[#757575] ">
@@ -472,7 +472,7 @@ function Training() {
             <div className="flex justify-center">
               <Link
                 href="/devops"
-                className="border-[1px] text-[#34A853] text-sm rounded-lg font-medium border-[#34A853] px-4 hover:bg-[#34A853] hover:text-white my-[55px] py-1"
+                className="border-[1px] bg-[#34A853] text-base rounded-lg font-medium border-[#34A853] px-6 text-white my-[55px] py-4"
               >
                 View more & Register
               </Link>
