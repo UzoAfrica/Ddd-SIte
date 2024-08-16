@@ -1,3 +1,5 @@
+"use client"
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import DoubleG from "@/components/common/DoubleG";
 import Product from "@/components/Product";
 import WhyChooseUs from "@/components/WhyChooseUs";
@@ -10,10 +12,18 @@ import IndianaTech from "@/components/common/IndianaTech";
 import NorthCarolinaSchool from "@/components/common/NorthCarolinaSchool";
 import Footer from "@/components/common/Footer";
 import Training from "@/components/main/Training";
+import WhatsAppPicture from '../assets/decagon-light.svg'
 
 export default function Home() {
   return (
    <div>
+    <FloatingWhatsApp
+        phoneNumber="+2347080992833"
+        accountName="Decagon Institute"
+        avatar={WhatsAppPicture}
+        notification
+        notificationSound
+      />
       <NavBar pageType="main"/>
       <InstituteHero />
       <Product/>

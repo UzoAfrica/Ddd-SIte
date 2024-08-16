@@ -1,4 +1,6 @@
+"use client"
 import React from "react";
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import Banner from "@/components/Banner";
 import FullstackHeroSection from "@/components/FullstackHeroSection";
 import FullstackPicture from "@/components/FullstackPicture";
@@ -17,10 +19,19 @@ import Decadev from "@/components/common/Decadev";
 import Facility from "@/components/common/Facility";
 import Faq from "@/components/common/faq";
 import Footer from "@/components/common/Footer";
+import WhatsAppPicture from '../../assets/decagon-light.svg'
+
 
 function FullStack() {
   return (
     <div>
+       <FloatingWhatsApp
+        phoneNumber="+2347080992833"
+        accountName="Decagon Institute"
+        avatar={WhatsAppPicture}
+        notification
+        notificationSound
+      />
       <NavBar pageType="fullstack" />
       <FullstackHeroSection />
       <FullstackPicture />

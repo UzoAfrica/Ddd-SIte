@@ -25,7 +25,7 @@ function DecagonDoubleG() {
             access to free guidance & coaching on school applications, securing
             M-Power student loan, and student visa applications & interviews.
           </p>
-          <div className=" mt-8 flex justify-center">
+          {/* <div className=" mt-8 flex justify-center">
             <a
               target="_blank"
               href="https://doubleg.decagon.institute/"
@@ -33,7 +33,7 @@ function DecagonDoubleG() {
             >
               Learn More
             </a>
-          </div>
+          </div> */}
         </div>
     </div>
   )

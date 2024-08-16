@@ -13,7 +13,7 @@ function Register() {
   return (
     <div>
       <RegisterNav />
-     <div className="bg-white">
+     <div className="bg-white mt-12">
      {!iframeLoaded && (
         <div
           className="w-8 h-8 bg-center bg-no-repeat bg-cover mx-auto mt-[100px]"

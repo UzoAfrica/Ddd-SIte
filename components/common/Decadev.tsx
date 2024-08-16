@@ -60,7 +60,7 @@ function Decadev({ pageType }: IDecadev) {
         <>
           {/* <Heading title="Decadevs" /> */}
           <h1 className="text-center text-2xl lg:text-[32px] font-bold  mt-[34px] md:w-[75%] mx-auto">
-            Meet some of our Decagon Alumni Decadevs
+            Meet some of our Decagon Alumni (Decadevs)
           </h1>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-[54px] mt-[55px] max-w-screen-lg mx-auto">
             {DecadevsProfile.map((person) => (

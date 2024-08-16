@@ -10,7 +10,7 @@ function Team() {
   return (
     <div className=""> 
         <div className="mx-auto container max-w-screen-xl py-6 lg:py-[50px] md:px-8 px-3">
-            <Heading title="Meet Our Team?"/>
+            <Heading title="Meet Our Team"/>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 my-16">
                 <div className="mb-8 md:mt-8 lg:mt-0 lg:mb-0">
                     <div className="flex justify-center"> <Image className="rounded-[50%]" src={Cn} width={198} height={198} alt="CN" /></div>

@@ -18,9 +18,14 @@ function Facility({pageType}: IFacility) {
            <Heading title="Our Facility " />
          </div>
       )}
-      <h1 className="text-center text-2xl lg:text-[40px] font-[700]">
+      {pageType === "fullstack" && (
+         <div className="mt-4 mb-8 lg:mt-[100px]">
+           <Heading title="Our Facility " />
+         </div>
+      )}
+      {/* <h1 className="text-center text-2xl lg:text-[40px] font-[700]">
         Explore Our State-of-the-Art Facility
-      </h1>
+      </h1> */}
       <p className="text-[#475467] text-center lg:w-[87%] mt-6 mx-auto">
         Need a structured environment for learning? Our Lagos facility offers a
         physical space for immersive hybrid learning with access to internet,

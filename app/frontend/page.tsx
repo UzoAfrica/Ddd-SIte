@@ -1,3 +1,6 @@
+"use client"
+
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import Banner from "@/components/Banner";
 import Learning from "@/components/Learning";
 import Payment from "@/components/Payment";
@@ -16,10 +19,19 @@ import Faq from "@/components/common/faq";
 import Footer from "@/components/common/Footer";
 import Requirement from "@/components/Requirement";
 import FrontendHero from "@/components/frontend/FrontendHero";
+import WhatsAppPicture from '../../assets/decagonLogo.svg'
 
 function Frontend() {
   return (
     <div>
+
+       <FloatingWhatsApp
+        phoneNumber="+2347080992833"
+        accountName="Decagon Institute"
+        avatar={WhatsAppPicture}
+        notification
+        notificationSound
+      />
       <NavBar pageType="frontend" />
       <FrontendHero />
       <WhyDecagon />

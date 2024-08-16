@@ -19,7 +19,7 @@ function Product() {
             </p>
             <p className="my-6">
               We help high-potential talent launch their careers in tech through
-              our software engineering and leadership program. 
+              our intensive training programs.
             </p>
             <p> 
               Decagon has over 1000 alumni working with top companies like JP

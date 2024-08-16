@@ -67,9 +67,9 @@ function DoubleG() {
           />
         </div>
       </div>
-        <div className="flex justify-center mt-8">
+        {/* <div className="flex justify-center mt-8">
             <a href="https://doubleg.decagon.institute/" className="py-3 text-sm md:text-base md:py-4 px-10 sm:px-14 rounded-lg bg-[#34A853] text-[#fff] font-[600]">Learn More</a>
-        </div>
+        </div> */}
     </div>
   );
 }

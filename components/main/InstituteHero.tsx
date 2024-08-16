@@ -10,13 +10,13 @@ function InstituteHero() {
       </h1>
       <div className="flex justify-center">
         <h1 className="text-center  font-[800] rounded-[30px] px-4 text-white mx-auto bg-[#12B76A] text-[29px] md:text-[48px]">
-          Software Engineering
+          Tech Training
         </h1>
       </div>
-      <h1 className="text-center font-[800] text-[#101828] text-[30px] md:text-[48px]">training institute</h1>
-      <p className="text-[#667085] text-center md:w-[80%] lg:w-[60%] mx-auto">
-        We transform talented individuals into world-class software engineers
-        and help them maximize  their potential.
+      <h1 className="text-center font-[800] text-[#101828] text-[30px] md:text-[48px]">institute</h1>
+      <p className="text-[#667085] text-center md:w-[80%] lg:w-[55%] mx-auto">
+        We transform talented individuals into world-class tech stars
+        and help them maximize their potential.
       </p>
       <p className="text-black text-center mt-4 font-bold w-[90%] md:w-[80%] lg:w-[55%] mx-auto">
         If you are looking for a structured & well-guided pathway for

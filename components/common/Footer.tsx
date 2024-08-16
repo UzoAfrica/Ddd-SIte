@@ -11,12 +11,13 @@ import Image from "next/image";
         </div>
         <div className="pt-6 pb-4 md:pt-[74px] md:pb-[60px] border-t md:border-none">
           <div className="flex flex-col md:flex md:flex-row justify-between">
-            <div>
-              <p className="text-sm md:text-base">
+            <div className="flex gap-1 flex-col-reverse xl:flex xl:flex-row items-center xl:gap-20">
+              <div className="text-sm md:text-base -ml-16 xl:ml-0">
                 &copy; {new Date().getFullYear().toString()} Decagon Institute.
                 All rights reserved
-              </p>
+              </div>
               {/* <p className="mt-4 text-sm font-[200]">Orchid Rd, Lekki Penninsula II, Lagos 106104, Lagos, Nigeria.</p> */}
+              <p className="text-sm md:text-base">Contact us: recruit@decagonhq.com or 07080992833</p>
             </div>
             <div className="flex gap-3 mt-6 md:mt-0">
               <div>
