@@ -131,7 +131,7 @@ export const fullstackQuestion = [
 export const frontendQuestion = [
   {
     id: 1,
-    title: "Q: Do I need a STEM background to apply for the Front-End Development program?",
+    title: "Do I need a STEM background to apply for the Front-End Development program?",
     info: (
       <>
         <p>

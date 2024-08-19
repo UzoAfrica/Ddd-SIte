@@ -35,9 +35,9 @@ function Frontend() {
       <NavBar pageType="frontend" />
       <FrontendHero />
       <WhyDecagon />
-      <Program />
+      <Program pageType="frontend" />
       <Learning pageType="frontend" />
-      <Banner />
+      <Banner pageType='frontend' />
       <Payment pageType="frontend" />
       <Requirement />
       <GetStarted pageType="frontend" />

@@ -36,9 +36,9 @@ function FullStack() {
       <FullstackHeroSection />
       <FullstackPicture />
       <WhyDecagon />
-      <Program />
+      <Program   pageType="fullstack"/>
       <Learning pageType="fullstack"/>
-      <Banner />
+      <Banner pageType="fullstack"/>
       <Payment pageType="fullstack"/>
       <Requirement />
       <GetStarted pageType="main" />

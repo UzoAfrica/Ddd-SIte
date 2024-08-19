@@ -28,7 +28,7 @@ function FrontendHero() {
           className="py-3 text-sm md:text-base md:py-4 px-4 sm:px-12 rounded-lg bg-[#34A853] text-[#fff] font-[600]"
           href="/reg-frontend"
         >
-          Apply Now
+          Register Now
         </Link>
       </div>
         <Image className="absolute md:left-[10%] -top-0 md:top-10"  src={Frontend_Two} alt="Image" />

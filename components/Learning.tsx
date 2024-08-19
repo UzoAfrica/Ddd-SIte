@@ -40,8 +40,7 @@ const thirdCourse = [
   "React Router",
   "Final Project",
   "Certificate of Completion ",
-  "Complimentary Application",
-  "Guidance for a Tech Masters abroad"
+  "Complimentary Application Guidance for a Tech Masters abroad",
 ];
  
 const frontendCourse = [

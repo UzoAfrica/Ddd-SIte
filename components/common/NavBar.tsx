@@ -15,8 +15,8 @@ function NavBar({pageType}: INavbar) {
         <div className="flex justify-between items-center">
           <Image className="w-[100px] h-[30px] md:h-[38px] md:w-[177px]" src={DecagonLogo} alt="decagon logo" />
          {pageType === "main" && <Button btnLink="/#training" text="Enroll in a Program"/>}
-         {pageType === "fullstack" && <Button btnLink="/register" text="Apply Now"/>}
-         {pageType === "frontend" && <Button btnLink="/reg-frontend" text="Apply Now"/>}
+         {pageType === "fullstack" && <Button btnLink="/register" text="Register Now"/>}
+         {pageType === "frontend" && <Button btnLink="/reg-frontend" text="Register Now"/>}
         </div>
       </div>
     </div>

@@ -47,7 +47,7 @@ export const COURSES = [
         id: 5,
         title: "We've produced over 1000 successful software engineers",
         icon: Success,
-        content: "We've trained over 1300 software engineers in the past 5 years, and over 10."
+        content: "We have trained over 1300 software engineers in the past 5 years, and over 1000 of them have gotten jobs in top companies."
     },
 
 ]
@@ -116,7 +116,7 @@ export const PROGRAMS = [
         id: 3,
         title: "Time",
         img: SpecTwo,
-        content: "Commit 8 – 10 hours daily to the program."
+        content: "Commit 10 – 12 Hours daily to the program."
     }
 ]
 

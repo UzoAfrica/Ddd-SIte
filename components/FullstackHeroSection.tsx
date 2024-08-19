@@ -16,7 +16,7 @@ function FullstackHeroSection() {
       </p>
       <p className="text-center text-lg text-[#667085] w-[95%] md:w-[83%] mx-auto mt-7 font-[500]">
         Looking to begin a lucrative career in tech? Full Stack Engineering is
-        your door to a world of opportunities. In just 10 weeks, gain the
+        your door to a world of opportunities. In just 18 weeks, gain the
         expertise to build, deploy, and manage complex applications, positioning
         yourself as a top contender in the tech industry.
       </p>
@@ -25,7 +25,7 @@ function FullstackHeroSection() {
           className="py-3 text-sm md:text-base md:py-4 px-8 sm:px-12 rounded-lg bg-[#34A853] text-[#fff] font-[600]"
           href="/register"
         >
-          Apply Now
+          Register Now
         </Link>
       </div>
     </div>
