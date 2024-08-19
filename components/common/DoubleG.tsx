@@ -27,7 +27,7 @@ function DoubleG() {
       visa applications & interviews.
       </p>
       <div className="grid lg:grid-cols-2 gap-8 lg:gap-14 max-w-[1100px] mx-auto">
-        <div className="bg-[#F2F4F7] px-3 pt-5 md:px-6 md:pt-6 rounded-[32px]">
+        <div className="bg-[#F2F4F7] px-3 py-5 md:px-6 md:pt-6 rounded-[32px]">
           <div className="bg-[#101828] text-white font-bold px-2.5 py-2 rounded-[32px] inline-block text-lg">
             Gateway 1
           </div>
@@ -46,7 +46,7 @@ function DoubleG() {
             className="rounded-3xl w-full"
           />
         </div>
-        <div className="bg-[#F2F4F7] px-3 pt-5 md:px-6 md:pt-6 rounded-[32px]">
+        <div className="bg-[#F2F4F7] px-3 py-5 md:px-6 md:pt-6 rounded-[32px]">
           <div className="bg-[#34A853] text-white font-bold px-2.5 py-2 rounded-[32px] inline-block text-lg">
             Gateway 2
           </div>
