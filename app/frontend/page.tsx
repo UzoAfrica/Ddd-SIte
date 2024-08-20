@@ -32,7 +32,9 @@ function Frontend() {
         notification
         notificationSound
       />
+      <div className='mb-[70px] lg:mb-[50px]'>
       <NavBar pageType="frontend" />
+      </div>
       <FrontendHero />
       <WhyDecagon />
       <Program pageType="frontend" />

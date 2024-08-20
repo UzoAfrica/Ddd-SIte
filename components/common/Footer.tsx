@@ -22,7 +22,7 @@ import Image from "next/image";
             <div className="flex gap-3 mt-6 md:mt-0">
               <div>
                 <a
-                  href="https://www.instagram.com/decagonhq/"
+                  href="https://www.instagram.com/decagon_institute?igsh=MWo4OWl1NmpkcTVpMw%3D%3D"
                   target="_blank"
                   rel="noreferrer"
                 >

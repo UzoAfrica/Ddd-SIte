@@ -30,7 +30,10 @@ function Deveops() {
         notification
         notificationSound
       />
-      <NavBar pageType="fullstack" />
+      <div className="mb-[80px] lg:mb-[50px]">
+        {" "}
+        <NavBar pageType="devops" />
+      </div>
       <Hero pageType="devops" />
       <WhyDecagon />
       <Program pageType='devops'/>
