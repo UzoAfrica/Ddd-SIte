@@ -59,7 +59,7 @@ function Learning() {
             subtitle="(second 4 weeks)"
           />
         </div>
-        <div className="grid lg:grid-cols-2 gap-10  lg:mt-[100px]">
+        {/* <div className="grid lg:grid-cols-2 gap-10  lg:mt-[100px]">
           <div>
             <Image src={ProgramImg} alt="program image" />
           </div>
@@ -74,15 +74,15 @@ function Learning() {
               <Faq />
             </div>
           </div>
-        </div>
-        <p className="text-center lg:mt-[100px] lg:text-lg text-[#838383]">
+        </div> */}
+        {/* <p className="text-center lg:mt-[100px] lg:text-lg text-[#838383]">
           Note: If you are unable to pay for Part 2 before its commencement date
           on <span className="font-[700]">Thur 3rd October 2024</span>, you can
           pay and join Part 2 of the next training cohort, which will be in{" "}
           <span className="font-[700]">December 2024/January 2025</span>.
           Certificate of completion is awarded after completing Program Parts 1
           & 2 successfully with good performance during the training.
-        </p>
+        </p> */}
       </div>
     </div>
   );

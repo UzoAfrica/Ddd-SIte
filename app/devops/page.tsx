@@ -6,7 +6,6 @@ import Program from "@/components/Program";
 import Requirement from "@/components/Requirement";
 import NavBar from "@/components/common/NavBar";
 import WhyDecagon from "@/components/common/WhyDecagon";
-import DecagonDoubleG from "@/components/devops/DecagonDoubleG";
 import Hero from "@/components/devops/Hero";
 import Learning from "@/components/devops/learning/Learning";
 import IndianaTech from "@/components/common/IndianaTech";
@@ -17,6 +16,8 @@ import Facility from "@/components/common/Facility";
 import Faq from "@/components/common/faq";
 import Footer from "@/components/common/Footer";
 import WhatsAppPicture from '../../assets/decagon-light.svg'
+import Payment from '@/components/Payment';
+import DoubleG from '@/components/common/DoubleG';
 
 
 function Deveops() {
@@ -32,10 +33,11 @@ function Deveops() {
       <NavBar pageType="fullstack" />
       <Hero pageType="devops" />
       <WhyDecagon />
-      <Program />
+      <Program pageType='devops'/>
       <Learning />
+      <Payment pageType="devops"/>
       <Requirement />
-      <DecagonDoubleG />
+      <DoubleG />
       <div className="pt-[120px]">
         <IndianaTech pageType="fullstack" />
       </div>
