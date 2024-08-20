@@ -1,13 +1,14 @@
 import React from "react";
 import DeacgonLightLogo from '../../assets/decagon-light.svg'
 import Image from "next/image";
+import Link from "next/link";
 
   export default function Footer() {
   return (
     <div className="pt-10 bg-[#1D2939] text-white">
       <div className="mx-auto container max-w-screen-xl px-8">
         <div className="md:mx-auto w-[135px] md:mt-4 pb-5">
-          <Image src={DeacgonLightLogo} alt="data analyisi" width={135} />
+          <Link href="/"><Image src={DeacgonLightLogo} alt="data analyisi" width={135} /></Link>
         </div>
         <div className="pt-6 pb-4 md:pt-[74px] md:pb-[60px] border-t md:border-none">
           <div className="flex flex-col md:flex md:flex-row justify-between">
