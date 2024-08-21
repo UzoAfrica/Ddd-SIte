@@ -15,7 +15,7 @@ function GetStarted( { pageType }: IGetStarted) {
               <div className="flex justify-center items-center bg-[#34A853] rounded-lg py-4 gap-2 w-[200px] mx-auto">
                   <Link
                       href="/register"
-                      className="text-base font-[700] ">Apply Now</Link>
+                      className="text-base font-[700] ">Register Now</Link>
                   <RiSendPlaneLine size={20} />
             </div>
             )}
@@ -31,7 +31,7 @@ function GetStarted( { pageType }: IGetStarted) {
               <div className="flex justify-center items-center bg-[#34A853] rounded-lg py-3 gap-2 w-[160px] mx-auto">
                   <Link
                        href="/reg-frontend"
-                      className="text-sm ">Apply Now</Link>
+                      className="text-sm ">Register Now</Link>
                   <RiSendPlaneLine size={20} />
             </div>
             )}

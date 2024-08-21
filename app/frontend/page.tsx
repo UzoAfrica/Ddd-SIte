@@ -43,7 +43,7 @@ function Frontend() {
       <Payment pageType="frontend" />
       <Requirement />
       <GetStarted pageType="frontend" />
-      <DoubleG />
+      <DoubleG pageType='frontend' />
       <div className="pt-[120px]">
         <IndianaTech pageType="fullstack" />
       </div>

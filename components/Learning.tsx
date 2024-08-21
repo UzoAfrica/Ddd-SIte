@@ -89,7 +89,7 @@ function Learning({ pageType }: ILearning) {
              img={PartThree}
              firstCourse={thirdCourse}
              title="Program Part 3"
-             subtitle="(second 6 weeks)"
+             subtitle="(third 6 weeks)"
            />
          </div>
        )}

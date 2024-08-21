@@ -44,7 +44,7 @@ function FullStack() {
       <Payment pageType="fullstack" />
       <Requirement />
       <GetStarted pageType="main" />
-      <DoubleG />
+      <DoubleG pageType="fullstack"/>
       <div className="pt-[120px]">
         <IndianaTech pageType="fullstack" />
       </div>

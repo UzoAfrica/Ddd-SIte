@@ -55,8 +55,8 @@ function Learning() {
           <ProgramPart
             img={PartThree}
             firstCourse={thirdCourse}
-            title="Program Part 2"
-            subtitle="(second 4 weeks)"
+            title="Program Part 3"
+            subtitle="(third 4 weeks)"
           />
         </div>
         {/* <div className="grid lg:grid-cols-2 gap-10  lg:mt-[100px]">

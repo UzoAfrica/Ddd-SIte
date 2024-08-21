@@ -96,8 +96,7 @@ function Payment({ pageType }: IPayment) {
               <CheckIcon />
             </div>
             <p className="mt-1  font-semibold">
-              Option 2: Hybrid (Online + 2 days a week in our Facility. Mondays
-              & Thursdays
+              Option 2: Hybrid (Online + 2 days a week in our Facility)
             </p>
           </div>
           <h1 className="text-xl font-[600] pt-7">Program Start Date</h1>
@@ -115,7 +114,7 @@ function Payment({ pageType }: IPayment) {
                   <CheckIcon />
                 </div>
                 <p className="mt-1  font-semibold">
-                  Part 2: Thur 22nd October 2024
+                  Part 2: Thur 24th October 2024
                 </p>
               </div>
             </>
@@ -134,7 +133,7 @@ function Payment({ pageType }: IPayment) {
                   <CheckIcon />
                 </div>
                 <p className="mt-1  font-semibold">
-                  Part 2: Thur 22nd October 2024
+                  Part 2: Thur 24th October 2024
                 </p>
               </div>
               <div className="flex gap-4 mt-3 mb-16">
@@ -143,7 +142,7 @@ function Payment({ pageType }: IPayment) {
                   <CheckIcon />
                 </div>
                 <p className="mt-1  font-semibold">
-                  Part 3: Mon 3rd December 2024
+                  Part 3: Thur 5th December 2024
                 </p>
               </div>
             </>
@@ -190,14 +189,14 @@ function Payment({ pageType }: IPayment) {
                   <CheckIcon />
                 </div>
                 <p className="mt-.5 text-[13px] md:text-base">
-                  Fully Online: N550k
+                  Fully Online: <span className="text-[#ffb52bdd] font-bold">N550k</span>
                 </p>
               </div>
               <div className="flex gap-4 my-3">
                 <div>
                   <CheckIcon />
                 </div>
-                <p className="mt-.5 text-[13px] md:text-base">Hybrid: N600k</p>
+                <p className="mt-.5 text-[13px] md:text-base">Hybrid: <span className="text-[#ffb52bdd] font-bold"> N600k</span></p>
               </div>
             </>
           )}
@@ -210,14 +209,14 @@ function Payment({ pageType }: IPayment) {
                   <CheckIcon />
                 </div>
                 <p className="mt-.5 text-[13px] md:text-base">
-                  Fully Online: N495k
+                  Fully Online:  <span className="text-[#ffb52bdd] font-bold">N495k</span>
                 </p>
               </div>
               <div className="flex gap-4 my-3">
                 <div>
                   <CheckIcon />
                 </div>
-                <p className="mt-.5 text-[13px] md:text-base">Hybrid: N595k</p>
+                <p className="mt-.5 text-[13px] md:text-base">Hybrid:  <span className="text-[#ffb52bdd] font-bold">N595k</span></p>
               </div>
             </>
           )}
@@ -230,14 +229,14 @@ function Payment({ pageType }: IPayment) {
                   <CheckIcon />
                 </div>
                 <p className="mt-.5 text-[13px] md:text-base">
-                  Fully Online: N400k
+                  Fully Online: <span className="text-[#ffb52bdd] font-bold">N400k</span>
                 </p>
               </div>
               <div className="flex gap-4 my-3">
                 <div>
                   <CheckIcon />
                 </div>
-                <p className="mt-.5 text-[13px] md:text-base">Hybrid: N500k</p>
+                <p className="mt-.5 text-[13px] md:text-base">Hybrid: <span className="text-[#ffb52bdd] font-bold">N500k</span></p>
               </div>
             </>
           )}
@@ -250,14 +249,14 @@ function Payment({ pageType }: IPayment) {
                   <CheckIcon />
                 </div>
                 <p className="mt-.5 text-[13px] md:text-base">
-                  Fully Online: N550k
+                  Fully Online: <span className="text-[#ffb52bdd] font-bold"> N550k</span>
                 </p>
               </div>
               <div className="flex gap-4 my-3">
                 <div>
                   <CheckIcon />
                 </div>
-                <p className="mt-.5 text-[13px] md:text-base">Hybrid: N600k</p>
+                <p className="mt-.5 text-[13px] md:text-base">Hybrid: <span className="text-[#ffb52bdd] font-bold">N600k</span></p>
               </div>
               <h1 className="mt-4">Part 3 (6 weeks)</h1>
               <div className="flex gap-4 mt-4">
@@ -266,14 +265,14 @@ function Payment({ pageType }: IPayment) {
                   <CheckIcon />
                 </div>
                 <p className="mt-.5 text-[13px] md:text-base">
-                  Fully Online: N550k
+                  Fully Online: <span className="text-[#ffb52bdd] font-bold">N550k</span>
                 </p>
               </div>
               <div className="flex gap-4 my-3 border-b-[1px] border-[#D0D5DD] pb-[27px]">
                 <div>
                   <CheckIcon />
                 </div>
-                <p className="mt-.5 text-[13px] md:text-base">Hybrid: N600k</p>
+                <p className="mt-.5 text-[13px] md:text-base">Hybrid: <span className="text-[#ffb52bdd] font-bold">N600k</span></p>
               </div>
             </>
           )}
@@ -287,14 +286,14 @@ function Payment({ pageType }: IPayment) {
                   <CheckIcon />
                 </div>
                 <p className="mt-.5 text-[13px] md:text-base">
-                  Fully Online: N400k
+                  Fully Online: <span className="text-[#ffb52bdd] font-bold">N400k</span>
                 </p>
               </div>
               <div className="flex gap-4 my-3">
                 <div>
                   <CheckIcon />
                 </div>
-                <p className="mt-.5 text-[13px] md:text-base">Hybrid: N500k</p>
+                <p className="mt-.5 text-[13px] md:text-base">Hybrid: <span className="text-[#ffb52bdd] font-bold">N500k</span></p>
               </div>
               <h1 className="mt-4">Part 3 (4 weeks)</h1>
               <div className="flex gap-4 mt-4">
@@ -303,14 +302,14 @@ function Payment({ pageType }: IPayment) {
                   <CheckIcon />
                 </div>
                 <p className="mt-.5 text-[13px] md:text-base">
-                  Fully Online: N400k
+                  Fully Online: <span className="text-[#ffb52bdd] font-bold">N400k</span>
                 </p>
               </div>
               <div className="flex gap-4 my-3 border-b-[1px] border-[#D0D5DD] pb-[27px]">
                 <div>
                   <CheckIcon />
                 </div>
-                <p className="mt-.5 text-[13px] md:text-base">Hybrid: N500k</p>
+                <p className="mt-.5 text-[13px] md:text-base">Hybrid: <span className="text-[#ffb52bdd] font-bold">N500k</span></p>
               </div>
             </>
           )}
@@ -323,14 +322,14 @@ function Payment({ pageType }: IPayment) {
                   <CheckIcon />
                 </div>
                 <p className="mt-.5 text-[13px] md:text-base">
-                  Fully Online: N495k
+                  Fully Online:  <span className="text-[#ffb52bdd] font-bold">N495k</span>
                 </p>
               </div>
               <div className="flex gap-4 my-3">
                 <div>
                   <CheckIcon />
                 </div>
-                <p className="mt-.5 text-[13px] md:text-base">Hybrid: N595k</p>
+                <p className="mt-.5 text-[13px] md:text-base">Hybrid:  <span className="text-[#ffb52bdd] font-bold">N595k</span></p>
               </div>
             </>
           )}
@@ -349,8 +348,8 @@ function Payment({ pageType }: IPayment) {
                   <CheckIcon />
                 </div>
                 <p className="mt-.5 text-[13px] md:text-base w-[70%]">
-                  Parts 1, 2, & 3 together - Fully Online: Pay N1.5M (Instead of
-                  1.65M. Save 150k)
+                  Parts 1, 2, & 3 together - Fully Online: Pay <span className="text-[#ffb52bdd] font-bold"> N1.5M</span> (Instead of
+                    <span className="text-[#ffb52bdd] font-bold"> N1.65M</span>. Save <span className="text-[#ffb52bdd] font-bold">N150k</span>)
                 </p>
               </div>
               <div className="flex gap-4 my-3">
@@ -358,15 +357,15 @@ function Payment({ pageType }: IPayment) {
                   <CheckIcon />
                 </div>
                 <p className="mt-.5 text-[13px] md:text-base w-[70%]">
-                  Parts 1, 2, & 3 together - Hybrid: Pay N1.6M (Instead of 1.8M.
-                  Save 200k)
+                  Parts 1, 2, & 3 together - Hybrid: Pay <span className="text-[#ffb52bdd] font-bold">N1.6M</span> (Instead of <span className="text-[#ffb52bdd] font-bold">N1.8M</span>.
+                  Save <span className="text-[#ffb52bdd] font-bold">N200k</span>)
                 </p>
               </div>
               <h1>Note:</h1>
               <p>
                 {" "}
                 * If you are unable to pay for Part 2 before its commencement
-                date on Thurs 22nd October 2024, you can pay and join Part 2 of
+                date on Thurs 24th October 2024, you can pay and join Part 2 of
                 the next training cohort, which will be in December 2024/January
                 2025.
               </p>
@@ -387,8 +386,8 @@ function Payment({ pageType }: IPayment) {
                   <CheckIcon />
                 </div>
                 <p className="mt-.5 text-[13px] md:text-base w-[70%]">
-                  Parts 1, 2, & 3 together - Fully Online: Pay N1.1M (Instead of
-                  1.2M. Save 100k)
+                  Parts 1, 2, & 3 together - Fully Online: Pay <span className="text-[#ffb52bdd] font-bold">N1.1M</span> (Instead of
+                  <span className="text-[#ffb52bdd] font-bold"> N1.2M</span>. Save <span className="text-[#ffb52bdd] font-bold">N100k</span>)
                 </p>
               </div>
               <div className="flex gap-4 my-3">
@@ -396,8 +395,8 @@ function Payment({ pageType }: IPayment) {
                   <CheckIcon />
                 </div>
                 <p className="mt-.5 text-[13px] md:text-base w-[70%]">
-                  Parts 1, 2, & 3 together - Hybrid: Pay N1.2M (Instead of 1.5M.
-                  Save 300k)
+                  Parts 1, 2, & 3 together - Hybrid: Pay <span className="text-[#ffb52bdd] font-bold">N1.2M</span> (Instead of <span className="text-[#ffb52bdd] font-bold">N1.5M</span>.
+                  Save <span className="text-[#ffb52bdd] font-bold">N300k</span>)
                 </p>
               </div>
               <h1>Note:</h1>
@@ -405,8 +404,7 @@ function Payment({ pageType }: IPayment) {
                 {" "}
                 * If you are unable to pay for Part 2 before its commencement
                 date on Thur 10th October 2024, you can pay and join Part 2 of
-                the next training cohort, which will be in December 2024/January
-                2025.
+                the next training cohort.
               </p>
               <p className="mt-3">
                 Certificate of completion is awarded after completing all
@@ -425,8 +423,8 @@ function Payment({ pageType }: IPayment) {
                   <CheckIcon />
                 </div>
                 <p className="mt-.5 text-[13px] md:text-base w-[70%]">
-                  Parts 1 & 2 together - Fully Online. Pay N890K (Instead of
-                  990k. Save 100k)
+                  Parts 1 & 2 together - Fully Online. Pay <span className="text-[#ffb52bdd] font-bold">N890K</span> (Instead of
+                    <span className="text-[#ffb52bdd] font-bold"> N990k</span>. Save <span className="text-[#ffb52bdd] font-bold">N100k</span>)
                 </p>
               </div>
               <div className="flex gap-4 my-3">
@@ -434,15 +432,15 @@ function Payment({ pageType }: IPayment) {
                   <CheckIcon />
                 </div>
                 <p className="mt-.5 text-[13px] md:text-base w-[70%]">
-                  Parts 1 & 2 together - Hybrid. Pay N990K (Instead of 1.19M.
-                  Save 200k)
+                  Parts 1 & 2 together - Hybrid. Pay <span className="text-[#ffb52bdd] font-bold">N990K</span> (Instead of <span className="text-[#ffb52bdd] font-bold">N1.19M</span>.
+                  Save <span className="text-[#ffb52bdd] font-bold">N200k</span>)
                 </p>
               </div>
               <h1>Note:</h1>
               <p>
                 {" "}
                 * If you are unable to pay for Part 2 before its commencement
-                date on Thurs 22nd October 2024, you can pay and join Part 2 of
+                date on Thurs 24th October 2024, you can pay and join Part 2 of
                 the next training cohort, which will be in December 2024/January
                 2025.
               </p>

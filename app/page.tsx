@@ -31,7 +31,7 @@ export default function Home() {
 
       <InstituteHero />
       <Product />
-      <DoubleG />
+      <DoubleG pageType="main"/>
       <Training />
       <WhyChooseUs />
       <Team />

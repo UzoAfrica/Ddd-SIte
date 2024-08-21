@@ -30,7 +30,7 @@ function Program({ pageType }: IProgram) {
             </div>
             <div className="bg-[#808000] text-[#FBFAF2] p-8 rounded-[32px]">
               <h1 className="text-2xl mb-3">
-                Junior, Mid-Level, & Senior-Level{" "}
+                Junior, Mid-Level, & Senior-Level Professionals{" "}
               </h1>
               <p>
                 Junior, Mid-Level, and Senior-Level professionals looking to
@@ -99,7 +99,7 @@ function Program({ pageType }: IProgram) {
             </div>
             <div className="bg-[#808000] text-[#FBFAF2] p-8 rounded-[32px]">
               <h1 className="text-2xl mb-3">
-                Junior, Mid-Level, & Senior-Level{" "}
+                Junior, Mid-Level, & Senior-Level Professionals{" "}
               </h1>
               <p>
                 Junior, Mid-Level, and Senior-Level professionals looking to transition into Fronten-End Development roles, or enhance their existing skillsets to become more valuable in thier field.
@@ -162,7 +162,7 @@ function Program({ pageType }: IProgram) {
             </div>
             <div className="bg-[#808000] text-[#FBFAF2] p-8 rounded-[32px]">
               <h1 className="text-2xl mb-3">
-                Junior, Mid-Level, & Senior-Level{" "}
+                Junior, Mid-Level, & Senior-Level Professionals{" "}
               </h1>
               <p>
               Junior, Mid-Level, and Senior-Level professionals looking to
@@ -205,7 +205,6 @@ function Program({ pageType }: IProgram) {
               <h1 className="text-2xl mb-3">Aspiring Professionals</h1>
               <p className="h-[200px]">
                 Existing or Aspiring Product Managers, Software Developers, System Administrators, Network Engineers, and other tech professionals seeking to broaden their expertise in the Software Development and Depolyment process using DevOps.
-                seeking to broaden their expertise in Software Engineering.
               </p>
               <div className="flex justify-center">
                 <Image src={Professional} alt="Young graduate" />

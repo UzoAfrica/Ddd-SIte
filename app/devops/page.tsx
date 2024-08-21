@@ -40,7 +40,7 @@ function Deveops() {
       <Learning />
       <Payment pageType="devops"/>
       <Requirement />
-      <DoubleG />
+      <DoubleG  pageType='devops'/>
       <div className="pt-[120px]">
         <IndianaTech pageType="fullstack" />
       </div>
