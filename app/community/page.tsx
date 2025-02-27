@@ -1,8 +1,10 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import DocumentViewer from '@/components/DocumentViewer';
+import LoadingState from '@/components/community/LoadingState';
+import ErrorState from '@/components/community/ErrorState';
 
 interface Document {
   id: string;
@@ -125,19 +127,12 @@ const downloadFile = async (url: string, fileName: string): Promise<void> => {
   }
 };
 
-export default function Community() {
-  const [selectedDoc, setSelectedDoc] = useState<Document | null>(null);
+function CommunityContent() {
   const searchParams = useSearchParams();
   const documentId = searchParams.get('doc');
-
-  useEffect(() => {
-    if (documentId) {
-      const doc = documents.find(d => d.id === documentId);
-      if (doc) {
-        setSelectedDoc(doc);
-      }
-    }
-  }, [documentId]);
+  const [selectedDoc, setSelectedDoc] = React.useState(
+    documents.find(d => d.id === documentId) || null
+  );
 
   const handleDownload = async (doc: Document) => {
     try {
@@ -213,5 +208,14 @@ export default function Community() {
         />
       )}
     </main>
+  );
+}
+
+// Main export
+export default function Community() {
+  return (
+    <Suspense fallback={<LoadingState />}>
+      <CommunityContent />
+    </Suspense>
   );
 }
