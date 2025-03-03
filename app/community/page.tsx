@@ -64,6 +64,11 @@ const documents: Document[] = [
     path: "Partial%20Loan%20liquidation%20template%20Sterling%20bank.docx"
   },
   {
+    id: "letter-of-non-indebtedness",
+    name: "REQUEST FOR LETTER OF NON-INDEBTEDNESS",
+    path: "https://dhqsh-asset.decagonhq.com/REQUEST%20FOR%20LETTER%20OF%20NON-INDEBTEDNESS.docx"
+  },
+  {
     id: "loan-insurance-claim",
     name: "Request For Loan Insurance Claim",
     path: "Request%20For%20Loan%20Insurance%20Claim.docx"
