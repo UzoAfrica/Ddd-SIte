@@ -16,82 +16,82 @@ const documents: Document[] = [
   {
     id: "sterling-loan-repayment-guide",
     name: "GUIDELINE FOR LOAN REPAYMENT STERLING BANK",
-    path: "GUIDELINE%20FOR%20LOAN%20REPAYMENT%20STERLING%20BANK.docx"
+    path: "dhq.sh/sterling-loan-repayment-guide"
   },
   {
     id: "access-loan-repayment-guide",
     name: "GUIDELINE FOR LOAN REPAYMENT ACCESS BANK",
-    path: "GUIDELINE%20FOR%20LOAN%20REPAYMENT%20ACCESS%20BANK%20(1).docx"
+    path: "dhq.sh/access-loan-repayment-guide"
   },
   {
     id: "sterling-loan-liquidation-template",
     name: "FULL LOAN LIQUIDATION TEMPLATE STERLING BANK",
-    path: "FULL%20LOAN%20LIQUIDATION%20TEMPLATE%20STERLING%20BANK.docx"
+    path: "dhq.sh/sterling-loan-liquidation-template"
   },
   {
     id: "guarantor-acknowledgment",
     name: "Guarantor Acknowledgment and Undertaking For Certificate C",
-    path: "Guarantor's%20Acknowledgment%20and%20Undertaking%20For%20Certificate%20C.docx"
+    path: "dhq.sh/guarantor-acknowledgment"
   },
   {
     id: "insurance-claim-request",
     name: "INSURANCE CLAIM REQUEST",
-    path: "INSURANCE%20CLAIM%20REQUEST.docx"
+    path: "dhq.sh/insurance-claim-request"
   },
   {
     id: "certificate-collection-attestation",
     name: "LETTER OF ATTESTATION FOR CERTIFICATE COLLECTION (Loan repayment Completed)",
-    path: "LETTER%20OF%20ATTESTATION%20%20FOR%20CERTIFICATE%20COLLECTION%20(Loan%20repayment%20%20Completed%20)%20(2).docx"
+    path: "dhq.sh/certificate-collection-attestation"
   },
   {
     id: "certificate-collection-undertaking",
     name: "LETTER OF UNDERTAKING FOR CERTIFICATE COLLECTION (Loan repayment Ongoing)",
-    path: "LETTER%20OF%20UNDERTAKING%20FOR%20CERTIFICATE%20COLLECTION%20(Loan%20repayment%20Ongoing)%20(2)%20(1).docx"
+    path: "dhq.sh/certificate-collection-undertaking"
   },
   {
     id: "access-loan-liquidation-template",
     name: "Loan Liquidation template Access bank",
-    path: "Loan%20Liquidation%20template%20Access%20bank.docx"
+    path: "dhq.sh/access-loan-liquidation-template"
   },
   {
     id: "sterling-loan-restructuring",
     name: "Loan Restructuring Request Sterling bank",
-    path: "Loan%20Restructuring%20Request%20Sterling%20bank.docx"
-  },
-  {
-    id: "sterling-partial-liquidation",
-    name: "Partial Loan liquidation template Sterling bank",
-    path: "Partial%20Loan%20liquidation%20template%20Sterling%20bank.docx"
+    path: "dhq.sh/sterling-loan-restructuring"
   },
   {
     id: "letter-of-non-indebtedness",
     name: "REQUEST FOR LETTER OF NON-INDEBTEDNESS",
-    path: "https://dhqsh-asset.decagonhq.com/REQUEST%20FOR%20LETTER%20OF%20NON-INDEBTEDNESS.docx"
+    path: "dhq.sh/letter-of-non-indebtedness"
+  },
+  {
+    id: "sterling-partial-liquidation",
+    name: "Partial Loan liquidation template Sterling bank",
+    path: "dhq.sh/sterling-partial-liquidation"
   },
   {
     id: "loan-insurance-claim",
     name: "Request For Loan Insurance Claim",
-    path: "Request%20For%20Loan%20Insurance%20Claim.docx"
+    path: "dhq.sh/loan-insurance-claim"
   },
   {
     id: "loan-restructuring-request",
     name: "Request for Loan restructuring",
-    path: "Request%20for%20Loan%20restructuring.docx"
+    path: "dhq.sh/loan-restructuring-request"
   },
   {
     id: "access-guarantee-release",
     name: "Request for Release of Guarantee documents Access bank",
-    path: "Request%20for%20Realease%20of%20Guarantee%20documents%20%20Access%20bank.docx"
+    path: "dhq.sh/access-guarantee-release"
   },
   {
     id: "sterling-guarantee-release",
     name: "Request for Release of Guarantee documents Sterling Bank",
-    path: "Request%20for%20Realease%20of%20Guarantee%20documents%20Sterling%20Bank.docx"
+    path: "dhq.sh/sterling-guarantee-release"
   },
   {
     id: "sterling-halt-moratorium",
     name: "Request to halt Moratorium sterling bank",
-    path: "Request%20to%20halt%20Moratorium%20sterling%20%20bank.docx"
+    path: "dhq.sh/sterling-halt-moratorium"
   }
 ];
 
