@@ -97,38 +97,41 @@ const documents: Document[] = [
 
 const downloadFile = async (url: string, fileName: string): Promise<void> => {
   try {
-    const response = await fetch(url, {
-      method: 'GET',
-      mode: 'cors',  // Add CORS mode
-      headers: {
-        'Access-Control-Allow-Origin': '*',
-      },
-    });
-
-    if (!response.ok) {
-      throw new Error(`Failed to download: ${response.statusText}`);
-    }
-
-    // Get the blob directly from the response
-    const blob = await response.blob();
+    // Create an anchor element
+    const link = document.createElement('a');
+    link.href = url;
+    link.target = '_blank'; // Open in new tab
+    link.download = fileName; // Set suggested filename
     
-    // Create download link
-    const downloadUrl = window.URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.style.display = 'none';
-    a.href = downloadUrl;
-    a.download = fileName;
-
-    // Trigger download
-    document.body.appendChild(a);
-    a.click();
-    
-    // Cleanup
-    window.URL.revokeObjectURL(downloadUrl);
-    document.body.removeChild(a);
+    // Directly trigger click without appending to document
+    link.click();
   } catch (error) {
     console.error('Download error:', error);
     throw new Error('Download failed. Please try again.');
+  }
+};
+
+const handleDownload = async (doc: Document) => {
+  try {
+    const documentUrl = `https://dhqsh-asset.decagonhq.com/${doc.path}`;
+    const fileName = doc.name + '.docx';
+    
+    // Add loading state
+    const button = document.querySelector(`button[data-doc-id="${doc.id}"]`);
+    if (button) button.setAttribute('disabled', 'true');
+    
+    // Use direct download approach
+    const link = document.createElement('a');
+    link.href = documentUrl;
+    link.download = fileName;
+    link.target = '_blank';
+    link.click();
+  } catch (error) {
+    console.error('Download failed:', error);
+    alert('Failed to download document. Please try again.');
+  } finally {
+    const button = document.querySelector(`button[data-doc-id="${doc.id}"]`);
+    if (button) button.removeAttribute('disabled');
   }
 };
 
@@ -138,26 +141,6 @@ function CommunityContent() {
   const [selectedDoc, setSelectedDoc] = React.useState(
     documents.find(d => d.id === documentId) || null
   );
-
-  const handleDownload = async (doc: Document) => {
-    try {
-      const documentUrl = `https://dhqsh-asset.decagonhq.com/${doc.path}`;
-      const fileName = doc.name.replace(/[/\\?%*:|"<>]/g, '-') + '.docx';
-      
-      // Add loading state for better UX
-      const button = document.querySelector(`button[data-doc-id="${doc.id}"]`);
-      if (button) button.setAttribute('disabled', 'true');
-      
-      await downloadFile(documentUrl, fileName);
-    } catch (error) {
-      console.error('Download failed:', error);
-      alert('Failed to download document. Please try again.');
-    } finally {
-      // Reset loading state
-      const button = document.querySelector(`button[data-doc-id="${doc.id}"]`);
-      if (button) button.removeAttribute('disabled');
-    }
-  };
 
   return (
     <main className="min-h-screen bg-gray-50">

@@ -15,19 +15,13 @@ interface DocumentViewerProps {
 }
 
 const downloadFile = async (url: string, fileName: string): Promise<void> => {
-  const response = await fetch(url);
-  if (!response.ok) {
-    throw new Error(`HTTP error! status: ${response.status}`);
-  }
-  const blob = await response.blob();
-  const blobUrl = window.URL.createObjectURL(blob);
   const link = document.createElement('a');
-  link.href = blobUrl;
+  link.href = url;
   link.download = fileName;
+  link.target = '_blank';
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
-  window.URL.revokeObjectURL(blobUrl);
 };
 
 export default function DocumentViewer({ document, onClose }: DocumentViewerProps) {
@@ -44,13 +38,12 @@ export default function DocumentViewer({ document, onClose }: DocumentViewerProp
   const handleDownload = async () => {
     setIsDownloading(true);
     try {
-      await downloadFile(
-        documentUrl,
-        `${document.name.replace(/[/\\?%*:|"<>]/g, '-')}.docx`
-      );
+      const documentUrl = `https://dhqsh-asset.decagonhq.com/${document.path}`;
+      const fileName = `${document.name.replace(/[/\\?%*:|"<>]/g, '-')}.docx`;
+      await downloadFile(documentUrl, fileName);
     } catch (error) {
       console.error('Download failed:', error);
-      alert('Failed to download document. Please check your internet connection and try again.');
+      alert('Failed to download document. Please try again.');
     } finally {
       setIsDownloading(false);
     }
