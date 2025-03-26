@@ -8,6 +8,15 @@ import Sterlingbank from "@/assets/sterlingbank.svg";
 import { DecadevsProfile } from "@/data";
 import Heading from "./Heading";
 
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+
+
 interface IDecadev {
   pageType: "main" | "fullstack";
 }
@@ -15,86 +24,76 @@ interface IDecadev {
 function Decadev({ pageType }: IDecadev) {
   return (
     <div className="mx-auto container max-w-screen-xl py-[50px] md:px-8 px-3">
-      {pageType === "fullstack" && (
-        <>
-          <h1 className="text-center text-2xl lg:text-5xl font-bold  md:w-[75%] mx-auto">
-            Meet some of our Decagon Alumni (
-            <span className="text-[#34A853]">Decadevs</span>)
-          </h1>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-[54px] mt-[55px] max-w-screen-lg mx-auto">
-            {DecadevsProfile.map((person) => (
-              <div
-                key={person.id}
-                className="flex justify-center relative flex-col items-center shadow-md rounded-2xl py-[33px]"
-              >
-                <div className="absolute top-1 mt-4">
-                  <div className="flex justify-center">
-                    <Image
-                      className="w-[100px] mb-[21px] h-[100px] border-gray-100 border-4 p-1 object-cover rounded-[50%]"
-                      width={100}
-                      height={100}
-                      src={person.img}
-                      alt=""
-                    />
-                  </div>
-                  <div className="text-center">
-                    <h1 className="text-2xl font-semibold text-black">
-                      {person.name}
-                    </h1>
-                    <p className="text-[#71717A]">{person.title}</p>
-                    <p className="text-[#71717A]">{person.company}</p>
-                    <p className="text-[#71717A]">{person.location}</p>
-                  </div>
-                </div>
-                <div className="mt-[150px] flex justify-center">
-                  <p className="text-center pt-20 w-[87%] text-sm text-[#71717A]">
-                    {person.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </>
-      )}
+    
       {pageType === "main" && (
         <>
-          {/* <Heading title="Decadevs" /> */}
-          <h1 className="text-center text-2xl lg:text-[32px] font-bold  mt-[34px] md:w-[75%] mx-auto">
-            Meet some of our Decagon Alumni (Decadevs)
-          </h1>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-[54px] mt-[55px] max-w-screen-lg mx-auto">
-            {DecadevsProfile.map((person) => (
-              <div
-                key={person.id}
-                className="flex justify-center relative flex-col items-center shadow-md rounded-2xl py-[33px]"
-              >
-                <div className="absolute top-1 mt-4">
-                  <div className="flex justify-center">
-                    <Image
-                      className="w-[100px] mb-[21px] h-[100px] border-gray-100 border-4 p-1 object-cover rounded-[50%]"
-                      width={100}
-                      height={100}
-                      src={person.img}
-                      alt=""
-                    />
-                  </div>
-                  <div className="text-center">
-                    <h1 className="text-2xl font-semibold text-black">
-                      {person.name}
-                    </h1>
-                    <p className="text-[#71717A]">{person.title}</p>
-                    <p className="text-[#71717A]">{person.company}</p>
-                    <p className="text-[#71717A]">{person.location}</p>
-                  </div>
+            <section className="py-16 bg-white">
+      <div className="max-w-6xl mx-auto text-center">
+        <h1 className="text-3xl lg:text-4xl font-bold text-black">
+          Meet some of our Decagon Alumni
+        </h1>
+        {/* <h2 className="text-2xl font-semibold text-green-600">
+          {"</"}<span className="text-black">Decadevs</span>{"/>"}
+        </h2> */}
+      </div>
+
+      {/* Swiper Carousel */}
+      <div className="max-w-6xl mx-auto mt-12">
+        <Swiper
+          modules={[Autoplay, Navigation, Pagination]}
+          spaceBetween={20}
+          slidesPerView={3} // Display 3 testimonials per slide
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          loop={true}
+          navigation
+          pagination={{ clickable: true }}
+          breakpoints={{
+            1024: { slidesPerView: 3 }, // 3 slides on large screens
+            768: { slidesPerView: 2 }, // 2 slides on tablets
+            640: { slidesPerView: 1 }, // 1 slide on mobile
+          }}
+          className="w-full"
+        >
+          {DecadevsProfile.map((person) => (
+            <SwiperSlide key={person.id}>
+              <div className="relative bg-white shadow-lg rounded-xl border p-6 flex flex-col justify-between h-[400px]">
+                {/* Testimonial Text */}
+                <p className="text-gray-700 text-sm italic">{person.description}</p>
+
+                {/* Quote Icon */}
+                <div className="absolute bottom-24 left-6 text-gray-300 text-[150px] leading-none">
+                    “
                 </div>
-                <div className="mt-[150px] flex justify-center">
-                  <p className="text-center pt-20 w-[87%] text-sm text-[#71717A]">
-                    {person.description}
-                  </p>
+
+
+                {/* Alumni Info */}
+                <div className="flex items-center mt-6 border-t pt-4 bg-[#F8FAE6] rounded-b-xl">
+                  <Image
+                    className="w-10 h-10 rounded-full object-cover border-2 border-white shadow-md"
+                    width={40}
+                    height={40}
+                    src={person.img}
+                    alt={person.name}
+                  />
+                  <div className="ml-3">
+                    <h3 className="text-black font-semibold">{person.name}</h3>
+                    <p className="text-xs text-gray-600">{person.title} @{person.company}</p>
+                  </div>
+                  {/* <Image
+                    className="ml-auto w-5 h-5"
+                    width={20}
+                    height={20}
+                    src={person.flag}
+                    alt="Country flag"
+                  /> */}
                 </div>
               </div>
-            ))}
-          </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </section>
+
         </>
       )}
       {pageType === "main" && (

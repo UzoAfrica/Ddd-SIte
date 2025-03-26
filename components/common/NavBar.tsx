@@ -25,7 +25,7 @@ function NavBar({ pageType }: INavbar) {
             <Button btnLink="/#training" text="Enroll in a Program" />
           )}
           {pageType === "fullstack" && (
-            <Button btnLink="/register" text="Register Now" />
+            <Button btnLink="/register" text="Register " />
           )}
           {pageType === "frontend" && (
             <Button btnLink="/reg-frontend" text="Register Now" />

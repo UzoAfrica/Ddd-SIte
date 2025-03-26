@@ -1,36 +1,75 @@
 import React from "react";
-import Button from "../common/Button";
 import Image from "next/image";
-import Mobile_Img from '../../assets/mobile-main.svg'
+import tech1 from "../../assets/tech1.jpg"
+import tech2 from "../../assets/tech2.jpg"
+import tech3 from "../../assets/tech3.jpg"
+
 function InstituteHero() {
   return (
-    <div className="mx-auto max-w-screen-xl container md:px-6 px-3">
-      <h1 className="text-center font-[800] mt-[64px] lg:mt-[144px] text-[28px] md:text-[48px]">
-        Welcome to Nigeria’s #1
+    <div className="mx-auto max-w-screen-xl container px-4 md:px-6 py-10 text-center">
+      {/* Heading */}
+      <h1 className="text-[28px] md:text-[48px] font-extrabold text-[#101828]">
+        Welcome to Nigeria’s <span className="text-black font-bold">#1</span>
       </h1>
-      <div className="flex justify-center">
-        <h1 className="text-center  font-[800] rounded-[30px] px-4 text-white mx-auto bg-[#12B76A] text-[29px] md:text-[48px]">
-          Tech Training
-        </h1>
-      </div>
-      <h1 className="text-center font-[800] text-[#101828] text-[30px] md:text-[48px]">institute</h1>
-      <p className="text-[#667085] text-center md:w-[80%] lg:w-[55%] mx-auto">
-        We transform talented individuals into world-class tech stars
-        and help them maximize their potential.
+      <h1 className="text-[28px] md:text-[48px] font-extrabold text-[#101828]">
+        Tech Training Institute
+      </h1>
+
+      {/* Description */}
+      <p className="text-[#667085] text-lg md:w-[80%] lg:w-[60%] mx-auto mt-4">
+        We transform talented individuals into world-class tech stars and help them maximize
+        their potential. If you’re looking for a structured, well-guided pathway to accelerate
+        your tech journey, you’re in the right place.
       </p>
-      <p className="text-black text-center mt-4 font-bold w-[90%] md:w-[80%] lg:w-[55%] mx-auto">
-        If you are looking for a structured & well-guided pathway for
-        accelerating your tech journey, you are in the right place
-      </p>
-      <div className="flex justify-center mt-8 mb-10">
-        <Button btnLink="/#training" text="Enroll in a Program"/>
+
+      {/* CTA Button */}
+      <div className="flex justify-center mt-6">
+        <button className="bg-[#12B76A] text-white px-6 py-3 rounded-full shadow-lg text-lg font-semibold border border-black">
+          Join The Waitlist
+        </button>
       </div>
-      <div className="flex justify-center">
-        <Image className="hidden md:block" src={"https://doubleg-cdn.decagon.institute/coverPicture.svg"} width={1000} height={1000} alt="" />
-        <Image src={Mobile_Img} className="md:hidden" width={1000} height={1000} alt="" />
+
+      {/* Images Section */}
+      <div className="flex flex-col md:flex-row justify-center items-center gap-6 mt-10">
+        <div className="relative w-full max-w-[280px] h-auto transform rotate-[-6deg]">
+          <Image
+            src= {tech1}
+            alt="Tech training"
+            width={300}
+            height={200}
+            className="rounded-lg shadow-md"
+          />
+          <div className="absolute top-[-10px] left-[-10px] text-yellow-400 text-3xl">
+            ✨
+          </div>
+        </div>
+
+        <div className="relative w-full max-w-[300px] h-auto transform rotate-[0deg]">
+          <Image
+            src= {tech2}
+            alt="Tech training"
+            width={300}
+            height={200}
+            className="rounded-lg shadow-md"
+          />
+        </div>
+
+        <div className="relative w-full max-w-[280px] h-auto transform rotate-[6deg]">
+          <Image
+            src= {tech3}
+            alt="Tech training"
+            width={300}
+            height={200}
+            className="rounded-lg shadow-md"
+          />
+          <div className="absolute top-[-10px] right-[-10px] text-green-500 text-3xl">
+            🌟
+          </div>
+        </div>
       </div>
     </div>
   );
 }
 
 export default InstituteHero;
+
