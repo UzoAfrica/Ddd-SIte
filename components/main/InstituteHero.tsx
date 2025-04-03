@@ -3,6 +3,7 @@ import Image from "next/image";
 import tech1 from "../../assets/tech1.jpg"
 import tech2 from "../../assets/tech2.jpg"
 import tech3 from "../../assets/tech3.jpg"
+import tech4 from "../../assets/tech4.png"
 
 function InstituteHero() {
   return (
@@ -31,20 +32,20 @@ function InstituteHero() {
 
       {/* Images Section */}
       <div className="flex flex-col md:flex-row justify-center items-center gap-6 mt-10">
-        <div className="relative w-full max-w-[280px] h-auto transform rotate-[-6deg]">
+        <div className="">
           <Image
-            src= {tech1}
+            src= {tech4}
             alt="Tech training"
-            width={300}
+            width={400}
             height={200}
-            className="rounded-lg shadow-md"
+            // className="rounded-lg shadow-md"
           />
-          <div className="absolute top-[-10px] left-[-10px] text-yellow-400 text-3xl">
+          {/* <div className="absolute top-[-10px] left-[-10px] text-yellow-400 text-3xl">
             ✨
-          </div>
+          </div> */}
         </div>
 
-        <div className="relative w-full max-w-[300px] h-auto transform rotate-[0deg]">
+        <div className="">
           <Image
             src= {tech2}
             alt="Tech training"
@@ -58,7 +59,7 @@ function InstituteHero() {
           <Image
             src= {tech3}
             alt="Tech training"
-            width={300}
+            width={400}
             height={200}
             className="rounded-lg shadow-md"
           />
