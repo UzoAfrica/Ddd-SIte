@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import tech4 from "../assets/tech4.jpg"
-import tech5 from "../assets/tech5.jpg"
-import tech6 from "../assets/tech6.jpg"
-import tech7 from "../assets/tech7.jpg"
+// import tech4 from "../assets/tech4.jpg"
+// import tech5 from "../assets/tech5.jpg"
+// import tech6 from "../assets/tech6.jpg"
+// import tech7 from "../assets/tech7.jpg"
 import tech8 from "../assets/tech8.jpg"
 import tech9 from "../assets/tech9.jpg"
 import tech10 from "../assets/tech10.jpg"
