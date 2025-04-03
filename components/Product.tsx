@@ -12,6 +12,7 @@ import legacyPic from "../assets/legacyPic.png"
 import legacyPic2 from "../assets/legacyPic2.png"
 
 
+
 function Product() {
   return (
     <div className="bg-gradient-to-b from-white to-[#EAF8E6] py-16">
@@ -43,20 +44,7 @@ function Product() {
         {/* Right Section (Images) */}
         {/* <div className="grid grid-cols-2 gap-4">
             <div className="relative">
-              <Image
-                src={tech4}
-                alt="Successful engineer"
-                width={300}
-                height={200}
-                className="left-[40px] rounded-lg shadow-lg"
-              />
-              <Image
-                src={tech5}
-                alt="Tech training"
-                width={150}
-                height={80}
-                className="absolute bottom-[-30px] left-[-40px] rounded-lg shadow-lg"
-              />
+          
             </div>
           </div> */}
 
@@ -67,19 +55,10 @@ function Product() {
           <Image
             src={legacyPic2}
             alt="Alumni community"
-          // width={300}
-          // height={200}
-          // className="rounded-lg shadow-lg"
           />
           {/* <div className="relative">
            
-            <Image
-              src={tech7}
-              alt="Tech workshop"
-              width={150}
-              height={80}
-              className="absolute bottom-[-30px] right-[180px] rounded-lg shadow-lg"
-            />
+           
           </div> */}
           {/* Image & Description Section */}
           <div className="lg:w-[40%] mt-20">
@@ -98,6 +77,7 @@ function Product() {
             </div>
           </div>
         </div>
+
 
         {/* Bottom Section (More Images) */}
         <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">

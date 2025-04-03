@@ -52,6 +52,7 @@ function Decadev({ pageType }: IDecadev) {
             768: { slidesPerView: 2 }, // 2 slides on tablets
             640: { slidesPerView: 1 }, // 1 slide on mobile
           }}
+
           className="w-full"
         >
           {DecadevsProfile.map((person) => (
@@ -93,6 +94,7 @@ function Decadev({ pageType }: IDecadev) {
         </Swiper>
       </div>
     </section>
+
 
         </>
       )}

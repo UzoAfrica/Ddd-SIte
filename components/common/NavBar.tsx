@@ -8,6 +8,7 @@ interface INavbar {
   pageType: "main" | "fullstack" | "frontend" | "devops"
 }
 
+
 function NavBar({ pageType }: INavbar) {
   return (
     <div className="border-b-[1px] border-[#D0D5DD] fixed w-full z-50 top-0 bg-white">

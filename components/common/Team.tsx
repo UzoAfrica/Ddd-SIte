@@ -6,6 +6,7 @@ import Hr from "@/assets/avatar/hr.png"
 import Heading from "./Heading"
 
 
+
 function Team() {
   return (
     <div className=""> 
