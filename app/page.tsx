@@ -38,7 +38,7 @@ export default function Home() {
       {/* <DoubleG pageType="main"/> */}
       {/* <Training /> */}
       <WhyChooseUs />
-      <Team />
+      {/* <Team /> */}
       <Decadev pageType="main" />
       <StudyAbroadSection />
       {/* <Facility pageType="main" /> */}
