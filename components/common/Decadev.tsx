@@ -51,6 +51,7 @@ function Decadev({ pageType }: IDecadev) {
             1024: { slidesPerView: 3 }, // 3 slides on large screens
             768: { slidesPerView: 2 }, // 2 slides on tablets
             640: { slidesPerView: 1 }, // 1 slide on mobile
+            380: { slidesPerView: 1 }, // 1 slide on mobile
           }}
 
           className="w-full"
