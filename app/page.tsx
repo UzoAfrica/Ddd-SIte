@@ -31,6 +31,7 @@ export default function Home() {
         {" "}
         <NavBar pageType="main" />
       </div>
+    
 
       <InstituteHero />
       <Product />
@@ -41,6 +42,7 @@ export default function Home() {
       {/* <Team /> */}
       <Decadev pageType="main" />
       <StudyAbroadSection />
+      
       {/* <Facility pageType="main" /> */}
       {/* <div className="pt-[50px]">
         <IndianaTech pageType="main" />

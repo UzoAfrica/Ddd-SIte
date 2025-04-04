@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import DecagonLogo from "../assets/decagonLogo.svg";
 import Image from "next/image";
 import Link from "next/link";
+import JoinWaitlist from "@/components/JoinWaitlist";
+
+
 
 function NavBar() {
   return (
@@ -28,10 +31,10 @@ function NavBar() {
 
           {/* Join Waitlist Button */}
           <Link
-            href="#waitlist"
+            href="/"
             className="relative px-6 py-2 text-black font-medium rounded-full border-2 border-black 
-            bg-white shadow-[5px_5px_0px_#000] transition-transform duration-300 
-            hover:scale-110 hover:shadow-[6px_6px_0px_#000]"
+                        bg-white shadow-[5px_5px_0px_#000] transition-transform duration-300 
+                        hover:scale-110 hover:shadow-[6px_6px_0px_#000]"
           >
             Join Waitlist
           </Link>
