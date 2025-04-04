@@ -4,7 +4,7 @@ import DoubleG from "@/components/common/DoubleG";
 import Product from "@/components/Product";
 import HowWeWork from "@/components/HowWeWork";
 import WhyChooseUs from "@/components/WhyChooseUs";
-import NavBar from "@/components/common/NavBar";
+import NavBar from "@/components/NavBar";
 import InstituteHero from "@/components/main/InstituteHero";
 import Team from "@/components/common/Team";
 import Decadev from "@/components/common/Decadev";
@@ -37,7 +37,7 @@ export default function Home() {
       <HowWeWork />
       {/* <DoubleG pageType="main"/> */}
       {/* <Training /> */}
-      <WhyChooseUs />
+      {/* <WhyChooseUs /> */}
       {/* <Team /> */}
       <Decadev pageType="main" />
       <StudyAbroadSection />

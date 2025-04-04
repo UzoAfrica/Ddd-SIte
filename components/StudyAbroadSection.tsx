@@ -13,7 +13,7 @@ export default function StudyAbroadSection() {
   ];
 
   return (
-    <div className="bg-gradient-to-r from-green-700 to-green-600 text-white p-10 flex flex-col lg:flex-row items-center justify-between rounded-xl shadow-lg max-w-6xl mx-auto">
+    <div id="whats-new" className="bg-gradient-to-r from-green-700 to-green-600 text-white p-10 flex flex-col lg:flex-row items-center justify-between rounded-xl shadow-lg max-w-6xl mx-auto">
       {/* Left Content */}
       <div className="max-w-lg">
         <div className="flex items-center space-x-2">

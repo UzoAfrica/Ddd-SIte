@@ -15,8 +15,7 @@ import legacyPic2 from "../assets/legacyPic2.png"
 
 function Product() {
   return (
-    <div className="bg-gradient-to-b from-white to-[#EAF8E6] py-16">
-
+    <div id="our-legacy" className="bg-gradient-to-b from-white to-[#EAF8E6] py-16">
       <div className="lg:flex lg:flex-row justify-between lg:gap-30  max-w-screen-xl px-6 lg:mx-auto md:mx-3">
         <div className="lg:w-[50%]">
           <h2 className="text-lg font-semibold text-gray-700 mb-4">Our Legacy</h2>
@@ -80,36 +79,37 @@ function Product() {
 
 
         {/* Bottom Section (More Images) */}
-        <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           <Image
-            src={tech8}
-            alt="Community event"
-            width={200}
-            height={150}
-            className="rounded-lg shadow-md"
+              src={tech8}
+             alt="Community event"
+             width={250}
+             height={200}
+           className="rounded-lg shadow-md "
+           />
+          <Image
+             src={tech9}
+             alt="Tech conference"
+             width={250}
+              height={200}
+            className="rounded-lg shadow-md "
           />
           <Image
-            src={tech9}
-            alt="Tech conference"
-            width={200}
-            height={150}
-            className="rounded-lg shadow-md"
-          />
-          <Image
-            src={tech10}
-            alt="Mentorship program"
-            width={200}
-            height={150}
-            className="rounded-lg shadow-md"
+             src={tech10}
+             alt="Mentorship program"
+             width={300}
+             height={200}
+             className="rounded-lg shadow-md w-full"
           />
           <Image
             src={tech11}
-            alt="Training session"
-            width={200}
-            height={150}
-            className="rounded-lg shadow-md"
-          />
-        </div>
+             alt="Training session"
+             width={300}
+            height={350}
+            className="rounded-lg shadow-md "
+            />
+      </div>
+
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import React from "react";
 import Program from "@/components/Program";
 import Requirement from "@/components/Requirement";
-import NavBar from "@/components/common/NavBar";
+import NavBar from "@/components/NavBar";
 import WhyDecagon from "@/components/common/WhyDecagon";
 import Hero from "@/components/devops/Hero";
 import Learning from "@/components/devops/learning/Learning";

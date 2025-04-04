@@ -8,7 +8,7 @@ import Learning from "@/components/Learning";
 import Payment from "@/components/Payment";
 import Program from "@/components/Program";
 import Requirement from "@/components/Requirement";
-import NavBar from "@/components/common/NavBar";
+import NavBar from "@/components/NavBar";
 import WhyDecagon from "@/components/common/WhyDecagon";
 import GetStarted from "@/components/GetStarted";
 import DoubleG from "@/components/common/DoubleG";

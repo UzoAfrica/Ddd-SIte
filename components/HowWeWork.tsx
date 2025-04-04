@@ -2,7 +2,8 @@ import React from "react";
 
 function HowWeWork() {
   return (
-    <div className="bg-gradient-to-b from-green-800 to-green-500 py-16 px-6 text-center text-white">
+    
+    <div id="how-we-work" className="bg-gradient-to-b from-green-800 to-green-500 py-16 px-6 text-center text-white">
       <div className="max-w-4xl mx-auto">
         <h4 className="text-lg font-medium">How we work</h4>
         <h2 className="text-3xl md:text-4xl font-extrabold mt-2">

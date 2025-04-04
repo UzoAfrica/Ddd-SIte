@@ -1,5 +1,7 @@
 import Image from "next/image";
-import Terragon from "@/assets/terragon.webp";
+import Terragon from "@/assets/payoneer.png";
+import Payoneer from "@/assets/terragon.webp";
+import UKTN from "@/assets/UKTN.png";
 import Carbon from "@/assets/carbon.svg";
 import Flutterwave from "@/assets/flutterwave.svg";
 import Microsoft from "@/assets/microsoft.svg";
@@ -23,7 +25,7 @@ interface IDecadev {
 
 function Decadev({ pageType }: IDecadev) {
   return (
-    <div className="mx-auto container max-w-screen-xl py-[50px] md:px-8 px-3">
+    <div id="alumni" className="mx-auto container max-w-screen-xl py-[50px] md:px-8 px-3">
     
       {pageType === "main" && (
         <>
@@ -51,7 +53,7 @@ function Decadev({ pageType }: IDecadev) {
             1024: { slidesPerView: 3 }, // 3 slides on large screens
             768: { slidesPerView: 2 }, // 2 slides on tablets
             640: { slidesPerView: 1 }, // 1 slide on mobile
-            380: { slidesPerView: 1 }, // 1 slide on mobile
+             380: { slidesPerView: 1 }, // 1 slide on mobile
           }}
 
           className="w-full"
@@ -100,55 +102,65 @@ function Decadev({ pageType }: IDecadev) {
         </>
       )}
       {pageType === "main" && (
-        <div className="mt-[100px] lg:mt-[150px]">
-          <Heading title=" Where some of our graduates work" />
+  <div className="mt-[100px] lg:mt-[150px] container mx-auto px-4 lg:px-16">
+    <h1 className="text-center text-xl md:text-2xl font-bold mt-10 md:mt-[100px] mx-auto font-[Patrick Hand]">
+      Places our talents currently work
+    </h1>
 
-          <div className="flex flex-wrap justify-center gap-3 md:gap-10 mt-6 items-center">
-            <Image
-              className="w-[150px] md:w-[170px] shadow-sm px-6 py-6"
-              width={150}
-              height={100}
-              src={Carbon}
-              alt="Carbon"
-            />
-            <Image
-              className="w-[150px] md:w-[170px] shadow-sm px-6 py-6"
-              width={170}
-              height={100}
-              src={Microsoft}
-              alt="Microsoft"
-            />
-            <Image
-              className="w-[170px] md:w-[200px] shadow-sm px-6 py-6"
-              width={200}
-              height={100}
-              src={Flutterwave}
-              alt="Flutterwave"
-            />
-            <Image
-              className="w-[150px] md:w-[170px] shadow-sm px-6 py-6"
-              width={150}
-              height={100}
-              src={Interswitch}
-              alt="Interswitch"
-            />
-            <Image
-              className="w-[110px] md:w-[110px] shadow-sm px-6 py-3"
-              width={100}
-              height={100}
-              src={Sterlingbank}
-              alt="Sterlingbank"
-            />
-            <Image
-              className="w-[170px] md:w-[170px] shadow-sm px-6 py-6"
-              width={170}
-              height={100}
-              src={Terragon}
-              alt="Terragon"
-            />
-          </div>
-        </div>
-      )}
+    <div className="flex flex-wrap justify-center gap-8 md:gap-12 mt-6 items-center">
+      <Image
+        className="w-[130px] md:w-[150px] shadow-sm px-4 py-4"
+        width={150}
+        height={100}
+        src={Payoneer}
+        alt="Payoneer"
+      />
+      <Image
+        className="w-[130px] md:w-[150px] shadow-sm px-4 py-4"
+        width={150}
+        height={100}
+        src={Interswitch}
+        alt="Interswitch"
+      />
+      <Image
+        className="w-[140px] md:w-[160px] shadow-sm px-4 py-4"
+        width={160}
+        height={100}
+        src={Microsoft}
+        alt="Microsoft"
+      />
+      <Image
+        className="w-[100px] md:w-[120px] shadow-sm px-4 py-4"
+        width={120}
+        height={100}
+        src={Carbon}
+        alt="Carbon"
+      />
+      <Image
+        className="w-[140px] md:w-[160px] shadow-sm px-4 py-4"
+        width={160}
+        height={100}
+        src={Flutterwave}
+        alt="Flutterwave"
+      />
+      <Image
+        className="w-[130px] md:w-[150px] shadow-sm px-4 py-4"
+        width={150}
+        height={100}
+        src={Terragon}
+        alt="Terragon"
+      />
+      <Image
+        className="w-[150px] md:w-[170px] shadow-sm px-4 py-4"
+        width={170}
+        height={100}
+        src={UKTN}
+        alt="UKTN"
+      />
+    </div>
+  </div>
+)}
+
        {pageType === "fullstack" && (
         <>
           <h1 className="text-center text-2xl w-[95%] md:text-5xl font-bold mt-20 md:mt-[100px] mx-auto">

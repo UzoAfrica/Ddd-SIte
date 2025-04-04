@@ -25,8 +25,9 @@ function InstituteHero() {
       </p>
 
       {/* CTA Button */}
-      <div className="flex justify-center mt-6">
-        <button className="bg-[#12B76A] text-white px-6 py-3 rounded-full shadow-lg text-lg font-semibold border border-black">
+      
+      <div  className="flex justify-center mt-6 ">
+        <button className="bg-[#12B76A] text-white px-6 py-3 rounded-full shadow-lg text-lg font-semibold border border-black transition-transform duration-300 hover:scale-110 hover:shadow-[6px_6px_0px_#000]">
           Join The Waitlist
         </button>
       </div>

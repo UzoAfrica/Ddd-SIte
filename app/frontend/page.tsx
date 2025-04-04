@@ -5,7 +5,7 @@ import Banner from "@/components/Banner";
 import Learning from "@/components/Learning";
 import Payment from "@/components/Payment";
 import Program from "@/components/Program";
-import NavBar from "@/components/common/NavBar";
+import NavBar from "@/components/NavBar";
 import WhyDecagon from "@/components/common/WhyDecagon";
 import React from "react";
 import GetStarted from "@/components/GetStarted";
