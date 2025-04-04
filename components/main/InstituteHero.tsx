@@ -5,7 +5,6 @@ import tech2 from "../../assets/tech2.jpg"
 import tech3 from "../../assets/tech3.jpg"
 import tech4 from "../../assets/tech4.png"
 
-
 function InstituteHero() {
   return (
     <div className="mx-auto max-w-screen-xl container px-4 md:px-6 py-10 text-center">

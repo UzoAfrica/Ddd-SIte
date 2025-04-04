@@ -3,10 +3,6 @@ import DecagonLogo from "../assets/decagonLogo.svg";
 import Image from "next/image";
 import Link from "next/link";
 
-
-
-
-
 function NavBar() {
   return (
     <div className="border-b-[1px] border-[#D0D5DD] fixed w-full z-50 top-0 bg-white">
@@ -45,8 +41,5 @@ function NavBar() {
     </div>
   );
 }
-
-
-
 
 export default NavBar;
