@@ -29,7 +29,7 @@ export default function Home() {
       /> */}
       <div className="mb-[120px] lg:mb-[50px]">
         {" "}
-        <NavBar pageType="main" />
+        <NavBar />
       </div>
     
 
