@@ -6,12 +6,12 @@ import Button from "./common/Button";
 
 export default function StudyAbroadSection() {
   const [selectedSchool, setSelectedSchool] = useState(0);
-  const schools = 
-            [
-                { name: "Harvard", flag: "/us-flag.png", img: "/../assets/tech11.jpg" },
-                { name: "Oxford", flag: "/uk-flag.png", img: "/oxford.png" },
-                { name: "Cape Town", flag: "/sa-flag.png", img: "/capetown.png" },
-              ];
+  const schools =
+    [
+      { name: "Harvard", flag: "/us-flag.png", img: "/../assets/tech11.jpg" },
+      { name: "Oxford", flag: "/uk-flag.png", img: "/oxford.png" },
+      { name: "Cape Town", flag: "/sa-flag.png", img: "/capetown.png" },
+    ];
 
   return (
     <div id="whats-new" className="bg-gradient-to-r from-green-700 to-green-600 text-white p-10 flex flex-col lg:flex-row items-center justify-between rounded-xl shadow-lg max-w-6xl mx-auto">
@@ -35,12 +35,12 @@ export default function StudyAbroadSection() {
           degree in tech can explore options in the U.S., U.K., and Canada.
         </p>
         <a href="https://www.zeem.co" target="_blank" rel="noopener noreferrer">
-        <button className="mt-5 px-6 py-3 bg-white text-black font-semibold rounded-full shadow-lg border border-black hover:bg-gray-200 transition">
-          Learn More On Zeem
-        </button>
+          <button className="mt-5 px-6 py-3 bg-white text-black font-semibold rounded-full shadow-lg border border-black hover:bg-gray-200 transition">
+            Learn More On Zeem
+          </button>
         </a>
-       
-           
+
+
       </div>
 
       {/* Right Content */}
@@ -64,9 +64,8 @@ export default function StudyAbroadSection() {
             {schools.map((school, index) => (
               <div
                 key={index}
-                className={`flex items-center p-2 rounded-lg cursor-pointer ${
-                  selectedSchool === index ? "bg-gray-200" : ""
-                }`}
+                className={`flex items-center p-2 rounded-lg cursor-pointer ${selectedSchool === index ? "bg-gray-200" : ""
+                  }`}
                 onClick={() => setSelectedSchool(index)}
               >
                 <Image
