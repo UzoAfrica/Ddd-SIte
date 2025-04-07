@@ -33,7 +33,7 @@ function FullStack() {
       />
 
       <div className="mb-[120px] lg:mb-[140px]">
-        <NavBar pageType="fullstack" />
+        {/* <NavBar pageType="fullstack" /> */}
       </div>
       <FullstackHeroSection />
       <FullstackPicture />

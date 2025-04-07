@@ -31,7 +31,7 @@ function Decadev({ pageType }: IDecadev) {
         <>
             <section className="py-16 bg-white">
       <div className="max-w-6xl mx-auto text-center">
-        <h1 className="text-3xl lg:text-4xl font-bold text-black">
+        <h1 className="font-neue text-3xl lg:text-4xl font-bold text-black">
           Meet some of our Decagon Alumni
         </h1>
         {/* <h2 className="text-2xl font-semibold text-green-600">
@@ -40,7 +40,7 @@ function Decadev({ pageType }: IDecadev) {
       </div>
 
       {/* Swiper Carousel */}
-      <div className="max-w-6xl mx-auto mt-12">
+      <div className="font-helvetica max-w-6xl mx-auto mt-12">
         <Swiper
           modules={[Autoplay, Navigation, Pagination]}
           spaceBetween={20}
@@ -103,7 +103,7 @@ function Decadev({ pageType }: IDecadev) {
       )}
       {pageType === "main" && (
   <div className="mt-[100px] lg:mt-[150px] container mx-auto px-4 lg:px-16">
-    <h1 className="text-center text-xl md:text-2xl font-bold mt-10 md:mt-[100px] mx-auto font-[Patrick Hand]">
+    <h1 className="font-fuzzybubbles text-center text-xl md:text-2xl font-bold mt-10 md:mt-[100px] ">
       Places our talents currently work
     </h1>
 

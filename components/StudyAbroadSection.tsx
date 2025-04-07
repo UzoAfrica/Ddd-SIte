@@ -3,14 +3,6 @@ import { useState } from "react";
 import tech12 from "../assets/tech12.jpg"
 
 export default function StudyAbroadSection() {
-  const [selectedSchool, setSelectedSchool] = useState(0);
-  const schools =
-    [
-      { name: "Harvard", flag: "/us-flag.png", img: "/../assets/tech11.jpg" },
-      { name: "Oxford", flag: "/uk-flag.png", img: "/oxford.png" },
-      { name: "Cape Town", flag: "/sa-flag.png", img: "/capetown.png" },
-    ];
-
   return (
     <div id="whats-new" className="bg-gradient-to-r from-green-700 to-green-600 text-white p-10 flex flex-col lg:flex-row items-center justify-between rounded-xl shadow-lg max-w-6xl mx-auto">
       {/* Left Content */}
@@ -20,13 +12,10 @@ export default function StudyAbroadSection() {
             🌱
           </div>
         </div>
-        <h1 className="text-4xl font-extrabold mt-3 relative">
+        <h1 className="font-neue text-4xl font-extrabold mt-3 relative">
           What's new?
-          <span className="absolute left-0 top-full text-green-900 opacity-30 text-4xl font-extrabold">
-            What's new?
-          </span>
         </h1>
-        <p className="text-lg mt-4 opacity-90">
+        <p className="font-helvetica text-lg mt-4 opacity-90">
           Decagon has partnered with its newly launched subsidiary, Zeem
           Global, to provide study-abroad opportunities for our alumni. Through
           this initiative, Decagon graduates interested in pursuing a master’s
@@ -37,8 +26,6 @@ export default function StudyAbroadSection() {
             Learn More On Zeem
           </button>
         </a>
-
-
       </div>
 
       {/* Right Content */}
@@ -48,39 +35,8 @@ export default function StudyAbroadSection() {
         <Image
           src={tech12}
           alt="Graduate"
-          width={300}
-          height={300}
-          className="relative rounded-xl shadow-lg z-10"
+          className="relative w-[260px] h-[300px] rounded-xl shadow-lg z-10"
         />
-
-        {/* Select School Dropdown */}
-        <div className="absolute bottom-4 right-4 bg-white text-black rounded-xl shadow-lg p-3 w-60">
-          <div className="flex items-center justify-between font-semibold">
-            {/* Select School <ChevronDownIcon className="w-5 h-5 text-gray-500" /> */}
-          </div>
-          <div className="mt-2 space-y-2">
-            {schools.map((school, index) => (
-              <div
-                key={index}
-                className={`flex items-center p-2 rounded-lg cursor-pointer ${selectedSchool === index ? "bg-gray-200" : ""
-                  }`}
-                onClick={() => setSelectedSchool(index)}
-              >
-                <Image
-                  src={school.img}
-                  width={30}
-                  height={30}
-                  className="rounded-full"
-                  alt={school.name}
-                />
-                <span className="ml-3 flex-1">{school.name}</span>
-                {/* {selectedSchool === index && (
-                //   <CheckIcon className="w-5 h-5 text-green-500" />
-                )} */}
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </div>
   );

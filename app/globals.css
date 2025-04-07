@@ -140,11 +140,29 @@ body {
 }
 
 @font-face {
-  font-family: 'Neue Power';
-  src: url('/fonts/NeuePower.woff2') format('woff2'),
-       url('/fonts/NeuePower.woff') format('woff');
+  font-family: 'NeuePower';
+  src: url('./NeuePower-Ultra.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeueLight';
+  src: url('./HelveticaNeueLight.otf') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'FuzzyBubbles';
+  src: url('./FuzzyBubbles-Regular.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* @font-face {
+  font-family: 'Futura';
+  font-weight: 400;
+  src: local('Futura'), url(./fonts/FutuHv.ttf) format('opentype');
+} */
 

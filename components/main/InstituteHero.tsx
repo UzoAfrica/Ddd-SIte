@@ -9,10 +9,10 @@ import JoinWaitlist from "@/components/JoinWaitlist";
 function InstituteHero() {
   return (
       <div className="mx-auto max-w-screen-xl container px-4 md:px-6 py-10 text-center">
-       <h1 className="text-[28px] md:text-[48px] font-extrabold text-[#101828] font-neue">
+       <h1 className=" text-[28px] md:text-[48px] font-extrabold text-[#101828] font-neue">
            Welcome to Nigeria’s <span className="text-black font-bold">#1</span>
         </h1>
-      <h1 className="text-[28px] md:text-[48px] font-extrabold text-[#101828] font-neue">
+      <h1 className="font-neue text-[28px] md:text-[48px] font-extrabold text-[#101828] font-neue">
            Tech Training Institute
       </h1>
 
@@ -26,40 +26,32 @@ function InstituteHero() {
 
       {/* Images Section */}
       <div className="flex flex-col md:flex-row justify-center items-center gap-6 mt-10">
-        <div className="">
-          <Image
-            src= {tech4}
-            alt="Tech training"
-            width={400}
-            height={200}
-            // className="rounded-lg shadow-md"
-          />
-          {/* <div className="absolute top-[-10px] left-[-10px] text-yellow-400 text-3xl">
-            ✨
-          </div> */}
-        </div>
+                <div className="z-10 transform -rotate-6 rounded-2xl overflow-hidden -mr-6">
+                        <Image
+                              src={tech4}
+                              alt="Tech training"
+                              className="w-[400px] h-[400px] rounded-lg"
+                          />
+                  </div>
 
-        <div className="">
-          <Image
-            src= {tech2}
-            alt="Tech training"
-            width={300}
-            height={200}
-            className="rounded-lg shadow-md"
-          />
-        </div>
+                  {/* <div className=""> */}
+                  <div className="z-20 rounded-2xl overflow-hidden shadow-lg">
+                    <Image
+                      src= {tech2}
+                      alt="Tech training"
+                      className="w-[350px] h-[400px] rounded-lg shadow-md"
+                    />
+                  </div>
 
-        <div className="relative w-full max-w-[280px] h-auto transform rotate-[6deg]">
-          <Image
-            src= {tech3}
-            alt="Tech training"
-            width={400}
-            height={200}
-            className="rounded-lg shadow-md"
-          />
-          <div className="absolute top-[-10px] right-[-10px] text-green-500 text-3xl">
-            🌟
-          </div>
+                  <div className="z-30 transform rotate-6 rounded-2xl overflow-hidden shadow-lg -ml-6">
+                    <Image
+                      src= {tech3}
+                      alt="Tech training"
+                      className="w-[350px] h-[400px] rounded-lg shadow-md"
+                    />
+                <div className="absolute top-[-10px] right-[-10px] text-green-500 text-3xl">
+                    🌟
+                </div>
         </div>
       </div>
     </div>

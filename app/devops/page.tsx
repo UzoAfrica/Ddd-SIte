@@ -32,7 +32,7 @@ function Deveops() {
       />
       <div className="mb-[80px] lg:mb-[50px]">
         {" "}
-        <NavBar pageType="devops" />
+        {/* <NavBar pageType="devops" /> */}
       </div>
       <Hero pageType="devops" />
       <WhyDecagon />
