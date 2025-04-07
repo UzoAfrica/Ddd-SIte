@@ -1,8 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
-// import { ChevronDownIcon, CheckIcon } from "@heroicons/react/solid";
 import tech12 from "../assets/tech12.jpg"
-import Button from "./common/Button";
 
 export default function StudyAbroadSection() {
   const [selectedSchool, setSelectedSchool] = useState(0);

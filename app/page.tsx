@@ -20,13 +20,13 @@ import WhatsAppPicture from "../assets/decagon-light.svg";
 export default function Home() {
   return (
     <div>
-      {/* <FloatingWhatsApp
+      <FloatingWhatsApp
         phoneNumber="+2347080992833"
         accountName="Decagon Institute"
         avatar={WhatsAppPicture}
         notification
         notificationSound
-      /> */}
+      />
       <div className="mb-[120px] lg:mb-[50px]">
         {" "}
         <NavBar />
@@ -38,8 +38,8 @@ export default function Home() {
       <HowWeWork />
       {/* <DoubleG pageType="main"/> */}
       {/* <Training /> */}
-      {/* <WhyChooseUs /> */}
-      {/* <Team /> */}
+      <WhyChooseUs />
+      <Team />
       <Decadev pageType="main" />
       <StudyAbroadSection />
       
