@@ -34,6 +34,8 @@ export default function Home() {
 
 
       <InstituteHero />
+      <InstituteHero />
+      <InstituteHero />
       <Product />
       <HowWeWork />
       {/* <DoubleG pageType="main"/> */}

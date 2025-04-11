@@ -1,17 +1,52 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
 
 const JoinWaitlist = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
 
-  return ( 
+  const handleSubmit = async (e: any) => {
+    e.preventDefault(); // Prevent default form submission
+
+    const formData = {
+      firstName,
+      lastName,
+      email,
+      phone,
+    };
+
+    try {
+      // Send form data to Google Apps Script Web App URL
+      const response = await fetch("https://script.google.com/macros/s/AKfycbwWKIMinsixm--Bi6rh_dJ1X5d6EHHZ2aUyaiCTB9SZcVqRYVJR2fruGFbROQhEBO4qoA/exec", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (data.result === "Success") {
+        alert("Successfully added to the waitlist!");
+        setIsOpen(false); // Close the modal
+      }
+    } catch (error) {
+      console.error("Error submitting data", error);
+      alert("An error occurred. Please try again.");
+    }
+  };
+
+  return (
     <>
       {/* Button to Open Modal */}
       <button
         onClick={() => setIsOpen(true)}
-        id = "waitlist"
+        id="waitlist"
         className="bg-[#12B76A] text-white px-6 py-3 rounded-full shadow-lg text-lg font-semibold transition-transform duration-300 hover:scale-110 hover:shadow-[6px_6px_0px_#000]"
       >
         Join The Waitlist
@@ -24,12 +59,8 @@ const JoinWaitlist = () => {
           onClick={() => setIsOpen(false)}
         >
           {/* Modal Content */}
-          <motion.div
+          <div
             onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside
-            initial={{ y: 100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: 100, opacity: 0 }}
-            transition={{ type: "spring", stiffness: 120 }}
             className="bg-white rounded-lg shadow-xl w-[90%] max-w-lg p-6"
           >
             {/* Close Button */}
@@ -49,7 +80,7 @@ const JoinWaitlist = () => {
             <hr className="my-4" />
 
             {/* Form */}
-            <form className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-2 gap-4">
                 {/* First Name */}
                 <div>
@@ -57,6 +88,8 @@ const JoinWaitlist = () => {
                   <input
                     type="text"
                     placeholder="E.g Tope"
+                    value={firstName}
+                    onChange={(e) => setFirstName(e.target.value)}
                     className="w-full px-4 py-2 border rounded-full focus:outline-none"
                   />
                 </div>
@@ -66,6 +99,8 @@ const JoinWaitlist = () => {
                   <input
                     type="text"
                     placeholder="E.g Dada"
+                    value={lastName}
+                    onChange={(e) => setLastName(e.target.value)}
                     className="w-full px-4 py-2 border rounded-full focus:outline-none"
                   />
                 </div>
@@ -78,6 +113,8 @@ const JoinWaitlist = () => {
                   <input
                     type="email"
                     placeholder="example@gmail.com"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     className="w-full px-4 py-2 border rounded-full focus:outline-none"
                   />
                 </div>
@@ -86,6 +123,8 @@ const JoinWaitlist = () => {
                   <input
                     type="tel"
                     placeholder="+234"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
                     className="w-full px-4 py-2 border rounded-full focus:outline-none"
                   />
                 </div>
@@ -99,7 +138,7 @@ const JoinWaitlist = () => {
                 Submit
               </button>
             </form>
-          </motion.div>
+          </div>
         </div>
       )}
     </>
